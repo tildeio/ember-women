@@ -1,0 +1,130 @@
+---
+title: The Women | Ember Women Helping Women
+---
+<section class="the-women">
+  <%= partial "header" %>
+  <section class="page-intro">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>Meet the mentorship team.</h1>
+        <p>We’ve organized a team with a range of experience to help you take the next steps. Whether you’re a conference veteran or just starting out, we're here.</p>
+      </div>
+    </div>
+  </section>
+  <section class="leadership">
+    <div class="row">
+      <div class="small-12 columns">
+        <ul>
+          <% data.the_women.each do |woman| %><% if woman.mentor %><li class="woman" id="<%= woman.anchor %>">
+            <a href="#" class="woman-thumb">
+              <img src="images/<%= woman.anchor %>.jpg" data-at2x="images/<%= woman.anchor %>.jpg" alt="<%= woman.name %>"/>
+              <p><%= woman.name %></p>
+            </a>
+            <section class="expand">
+              <div class="row">
+                <% if woman.youtube present? %>
+                <div class="small-12 medium-8 large-8 columns">
+                  <h2><%= woman.name %></h2>
+                  <a href="http://twitter.com/<%= woman.twitter %>" class="twitter" title="<%= woman.name %> on Twitter"></a>
+                  <p class="job-title"><%= woman.job_title %></p>
+                  <p class="bio"><%= woman.bio %></p>
+                  <% if woman.link1 present? %>
+                  <ul class="other-links">
+                    <li>
+                      <a href="<%= woman.link1 %>"><%= woman.link1_desc %></a>
+                    </li>
+                    <% if woman.link2 present? %>
+                    <li>
+                      <a href="<%= woman.link2 %>"><%= woman.link2_desc %></a>
+                    </li>
+                    <% end %>
+                  </ul>
+                  <% end %>
+                </div>
+                <div class="small-12 medium-4 large-4 columns">
+                  <a href="https://www.youtube.com/watch?v=<%= woman.youtube %>" class="video-thumb">
+                    <figure>
+                      <div> <!-- Because the IMG tag doesn't allow pseudo elements (the play icon) -->
+                        <img src="http://i.ytimg.com/vi/<%= woman.youtube %>/hqdefault.jpg" alt="Watch <%= woman.youtube_title %>r">
+                        <!-- <img src="images/leah-silber-talk.png"  alt="<%= woman.youtube_title %>"/> -->
+                      </div>
+                      <figcaption>
+                        “Building an OSS-Centric Company”
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+
+                <% else %>
+                <div class="small-12 medium-8 large-8 columns">
+                  <h2><%= woman.name %></h2>
+                  <a href="http://twitter.com/<%= woman.twitter %>" class="twitter" title="<%= woman.name %>"></a>
+                  <p class="job-title"><%= woman.job_title %></p>
+                  <p class="bio"><%= woman.bio %></p>
+                </div>
+                <div class="small-12 medium-4 large-4 columns">
+                  <% if woman.link1 present? %>
+                  <ul class="other-links">
+                    <li>
+                      <a href="<%= woman.link1 %>"><%= woman.link1_desc %></a>
+                    </li>
+                    <% if woman.link2 present? %>
+                    <li>
+                      <a href="<%= woman.link2 %>"><%= woman.link2_desc %></a>
+                    </li>
+                    <% end %>
+                  </ul>
+                  <% end %>
+                </div>
+                <% end %>
+              </div>
+            </section>
+          </li><% end %><% end %>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+  <section class="participants">
+    <div class="row">
+      <div class="small-12 columns">
+        <h2>And the other women participating.</h2>
+        <p>ffff.</p>
+      </div>
+    </div>
+  </section>
+
+  <%= partial "signup-form" %>
+  <%= partial "xsponsors-footer" %>
+  <%= partial "footer" %>
+
+  <script>
+  $(document).ready(function() {
+    $('.video-thumb').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+
+      fixedContentPos: false
+    });
+  });
+  </script>
+  <script> // Animate Scroll-To Links
+  $(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 800, function () {
+        window.location.hash = target;
+      });
+    });
+  });
+  </script>
+</section>
