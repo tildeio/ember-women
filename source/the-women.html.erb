@@ -6,19 +6,26 @@ title: The Women | Ember Women Helping Women
   <section class="page-intro">
     <div class="row">
       <div class="small-12 columns">
-        <h1>Meet the mentorship team.</h1>
+        <h1>Meet the women involved.</h1>
         <p>We’ve organized a team with a range of experience to help you take the next steps. Whether you’re a conference veteran or just starting out, we're here.</p>
       </div>
     </div>
   </section>
-  <section class="leadership">
-    <div class="row">
+  <section class="women-list">
+    <div class="row collapse">
       <div class="small-12 columns">
-        <ul>
-          <% data.the_women.each do |woman| %><% if woman.mentor %><li class="woman" id="<%= woman.anchor %>">
-            <a href="#" class="woman-thumb">
-              <img src="images/<%= woman.anchor %>.jpg" data-at2x="images/<%= woman.anchor %>.jpg" alt="<%= woman.name %>"/>
-              <p><%= woman.name %></p>
+        <ul class=" small-up-2 medium-up-3 large-up-4">
+          <% data.the_women.shuffle.each do |woman| %>
+          <li class="woman column" id="<%= woman.anchor %>">
+            <a href="#<%= woman.anchor %>">
+              <div class="woman-thumb">
+                <img src="images/<%= woman.anchor %>.jpg" data-at2x="images/<%= woman.anchor %>.jpg" alt="<%= woman.name %>"/>
+                <% if woman.mentor %><p class="mentor-badge">Mentor</p><% end %>
+              </div>
+              <div class="basic-info">
+                <h3 class="woman-name"><%= woman.name %></h3>
+                <p class="location"><%= woman.location %></p>
+              </div>
             </a>
             <section class="expand">
               <div class="row">
@@ -54,7 +61,6 @@ title: The Women | Ember Women Helping Women
                     </figure>
                   </a>
                 </div>
-
                 <% else %>
                 <div class="small-12 medium-8 large-8 columns">
                   <h2><%= woman.name %></h2>
@@ -79,20 +85,13 @@ title: The Women | Ember Women Helping Women
                 <% end %>
               </div>
             </section>
-          </li><% end %><% end %>
+          </li>
+          <% end %>
         </ul>
+      </div>
+    </div>
+  </section>
 
-      </div>
-    </div>
-  </section>
-  <section class="participants">
-    <div class="row">
-      <div class="small-12 columns">
-        <h2>And the other women participating.</h2>
-        <p>ffff.</p>
-      </div>
-    </div>
-  </section>
 
   <%= partial "signup-form" %>
   <%= partial "xsponsors-footer" %>

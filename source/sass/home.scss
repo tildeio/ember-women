@@ -1,0 +1,144 @@
+/* Homepage
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.home {
+  .showcase {
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #211206; //Dark Black
+      opacity: .7;
+      @media screen and (min-width: $medium){
+        display: none;
+      }
+    }
+    position: relative;
+    @include at2x('../images/lauren-tan-speaking', jpg, 300%, auto);
+    background-position: bottom right;
+    background-color: #1D1209;
+    background-repeat: no-repeat;
+    padding-bottom: 6em;
+    @media screen and (min-width: $small){
+      background-size: 175% auto;
+    }
+    @media screen and (min-width: $small-medium){
+      background-size: 135% auto;
+    }
+    @media screen and (min-width: $medium){
+      background-size: auto 100%;
+      padding-bottom: 10em;
+    }
+    @media screen and (min-width: $xxlarge){
+      background-size: auto 100%;
+      background-position: 33%, 0;
+    }
+    .main-menu {
+      ul {
+        li {
+          a {
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .page-intro {
+      margin-top: 1em;
+      text-align: center;
+      position: relative;
+      @media screen and (min-width: $medium){
+        text-align: left;
+        margin-top: 4em;
+      }
+      h1 {
+        color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+        @media screen and (min-width: $small){
+          padding-left: 0;
+          padding-right: 0;
+        }
+        @media screen and (min-width: $small-medium){
+          padding-left: 0;
+          padding-right: 0em;
+        }
+        @media screen and (min-width: $medium){
+          padding-left: 0;
+          padding-right: 3em;
+        }
+        @media screen and (min-width: $medium-large){
+          padding-left: 0;
+          padding-right: 4em;
+        }
+        @media screen and (min-width: $large){
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+      p {
+        color: #857B70;
+        @media screen and (min-width: $medium){
+          padding-right: 5em;
+        }
+      }
+      a {
+        &.button {
+          padding-left: 2.5em;
+          padding-right: 2.5em;
+          background: none;
+          border: 1px solid $blue;
+          &:hover {
+            border-color: $dark-blue;
+          }
+        }
+      }
+    }
+  }
+  .women-intro {
+    text-align: center;
+    padding-top: 4em;
+    div {
+      h2 {
+        padding-right: 0;
+        margin-top: 2em;
+        margin-bottom: .25em;
+      }
+      p {
+        padding: 0;
+        font-size: $font-medium;
+        margin-top: 0;
+        @media screen and (min-width: $medium){
+          padding: 0 10% 0;
+          font-size: $font-medium-large;
+
+        }
+        a {
+          color: $blue;
+          cursor: pointer;
+          &:hover {
+            color: $dark-blue;
+          }
+        }
+      }
+      a {
+        &.button {
+          border: 1px solid $blue;
+          color: $blue;
+          background: none;
+          padding-left: 1.75em;
+          padding-right: 1.75em;
+          &:hover {
+            color: $dark-blue;
+            border: 1px solid $dark-blue;
+          }
+        }
+      }
+    }
+  }
+}

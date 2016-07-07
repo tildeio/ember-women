@@ -1,0 +1,68 @@
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$font-xsmall: .8125em; // 13px
+$font-small: .9375em; // 15px
+$font-medium: 1.125em; // 18px
+$font-medium-large: 1.3125em; // 21px
+$font-large: 1.625em; // 26px
+$font-xlarge: 2.5em; // 40px
+$font-xxlarge: 3.375em; // 54px
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $page-bg;
+}
+
+h1 {
+  font-size: $font-large;
+  line-height: 1.2em;
+  margin: 0;
+  letter-spacing: -2px;
+  @media screen and (min-width: $small){
+    font-size: $font-xlarge;
+  }
+  @media screen and (min-width: $large){
+    font-size: $font-xxlarge;
+  }
+  & + p {
+    margin-top: .625em;
+    color: $gray;
+    font-size: $font-small;
+    @media screen and (min-width: $small){
+      font-size: $font-medium;
+      padding-right: 0;
+    }
+    @media screen and (min-width: $medium){
+      font-size: $font-medium-large;
+      padding-right: 3.75em;
+    }
+    @media screen and (min-width: $large) {
+      font-size: $font-large;
+    }
+  }
+}
+h2 {
+  letter-spacing: -1px;
+  @media screen and (min-width: $small){
+    font-size: $font-medium-large;
+  }
+  @media screen and (min-width: $large) {
+    font-size: $font-large;
+  }
+}
+h3 {
+  font-size: $font-small;
+  padding: 0;
+  margin: 0;
+}
+h5 {
+  margin: 0;
+  font-size: $font-small;
+}
+figcaption {
+  font-size: $font-xsmall;
+  color: $gray;
+  line-height: 1.5em;
+}

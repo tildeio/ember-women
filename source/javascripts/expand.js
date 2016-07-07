@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-  $('a.woman-thumb').click(function(event) {
+  $('.woman a').click(function(event) {
     event.preventDefault();
     if ($(this).parent('.woman').hasClass('active')) {
       $(this).parent('.woman').removeClass('active');
