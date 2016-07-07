@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$black".
-        on line 21 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss
+Error: Undefined variable: "$orange".
+        on line 22 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss
 
-16:         vertical-align: top;
-17:         padding: 0 1%;
-18:         &.woman {
-19:           a {
-20:             div.woman-thumb {
-21:               background: $black;
-22:               display: block;
-23:               position: relative;
-24:               img {
-25:                 width: 100%;
-26:                 height: 100%;
+17:         vertical-align: top;
+18:         padding: 0 1%;
+19:         &.woman {
+20:           a {
+21:             div.woman-thumb {
+22:               background: $orange;
+23:               display: block;
+24:               position: relative;
+25:               padding-bottom: 65%;
+26:               overflow: hidden;
+27:               img {
 
 Backtrace:
-/Users/jeffdaley/Code/ember-women/source/sass/the-women.scss:21
+/Users/jeffdaley/Code/ember-women/source/sass/the-women.scss:22
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -135,4 +135,4 @@ org/jruby/RubyProc.java:271:in `call'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 21 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss\A \A 16:         vertical-align: top;\A 17:         padding: 0 1%;\A 18:         &.woman {\A 19:           a {\A 20:             div.woman-thumb {\A 21:               background: $black;\A 22:               display: block;\A 23:               position: relative;\A 24:               img {\A 25:                 width: 100%;\A 26:                 height: 100%;"; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 22 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss\A \A 17:         vertical-align: top;\A 18:         padding: 0 1%;\A 19:         &.woman {\A 20:           a {\A 21:             div.woman-thumb {\A 22:               background: $orange;\A 23:               display: block;\A 24:               position: relative;\A 25:               padding-bottom: 65%;\A 26:               overflow: hidden;\A 27:               img {"; }
