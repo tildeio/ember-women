@@ -1,0 +1,58 @@
+/* Become a Sponsor
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.become-a-sponsor {
+  .page-intro {
+    // padding-bottom: 6em;
+    .button {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+    .call-to-action {
+      font-size: $font-small;
+      .button {
+        vertical-align: baseline;
+      }
+      span {
+        display: block;
+        @media screen and (min-width: $medium){
+          padding-left: .75em;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .previous-xsponsors {
+    padding-bottom: 5em;
+    h3 {
+      margin-top: 1em;
+    }
+    ul {
+      list-style: none;
+      margin-top: 2em;
+      li {
+        width: 50%;
+        float: left;
+        display: table-cell;
+        height: 3.5em;
+        padding-right: 2em;
+        vertical-align: middle;
+        padding: .25em 3em .25em 0;
+        @media screen and (min-width: $medium){
+          width: 25%;
+        }
+        span {
+          display: inline-block;
+          height: 100%;
+          width: 1px;
+          margin-left: -1px;
+          vertical-align: middle;
+        }
+        img {
+          max-height: 100%;
+          vertical-align: middle;
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+---
+title: Contact Us | Ember Women Helping Women
+---
+<section class="contact">
+  <%= partial "header" %>
+  <section class="page-intro">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>Contact us.</h1>
+        <ul class="row collapse">
+          <li class="large-4 columns">
+            <h3>Have a question?</h3>
+            <p><a href="mailto:questions@emberwomen.com">questions@emberwomen.com</a></p>
+          </li>
+          <li class="large-4 columns">
+            <h3>Need a speaker?</h3>
+            <p><a href="mailto:speakers@emberwomen.com">speakers@emberwomen.com</a></p>
+          </li>
+          <li class="large-4 columns">
+            <h3>Want to sponsor?</h3>
+            <p><a href="mailto:sponsors@emberwomen.com">sponsors@emberwomen.com</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <%= partial "xsponsors-footer" %>
+  <%= partial "footer" %>
+
+  <script>
+  $(document).ready(function() {
+    $('.video-thumb').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+
+      fixedContentPos: false
+    });
+  });
+  </script>
+  <script> // Animate Scroll-To Links
+  $(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+      $('html, body').delay(60);
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top - 120
+      }, 260, function () {
+        window.location.hash = target;
+      });
+    });
+  });
+  </script>
+</section>

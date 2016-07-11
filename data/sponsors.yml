@@ -1,0 +1,6 @@
+- name: "Dockyard"
+  image: dockyard-logo.png
+  website: "http://www.stickermule.com/unlock?ref_id=3368978601"
+- name: "Fastly"
+  image: fastly-logo.png
+  website: "http://echobind.com/emberconf/"

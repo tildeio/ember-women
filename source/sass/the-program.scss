@@ -25,7 +25,8 @@
     padding-top: 3.125em;
     div {
       .border-wrapper {
-        border-bottom: 1px solid $hairline-gray;
+        border-bottom: 1px solid $hairline;
+        padding-bottom: 2em;
         h2 {
           padding-right: 1em;
         }
@@ -80,8 +81,8 @@
       padding-bottom: 0;
       border: none;
       @media screen and (min-width: $medium){
-        padding-bottom: 2em;
-        border-bottom: 1px solid $hairline-gray;
+        padding-bottom: 4em;
+        border-bottom: 1px solid $hairline;
       }
     }
     .pay-it-forward {
@@ -100,14 +101,14 @@
 
         @media screen and (min-width: $medium){
           margin-left: 0em;
-          margin-top: -4em;
+          margin-top: -5em;
           float: right;
           width: 20em;
           background-color: transparent;
         }
         @media screen and (min-width: $large){
           margin-left: 2em;
-          margin-top: -6em;
+          margin-top: -9em;
         }
         .circle__inner {
 

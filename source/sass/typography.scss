@@ -12,7 +12,6 @@ $font-xxlarge: 3.375em; // 54px
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: $page-bg;
 }
 
 h1 {
@@ -26,25 +25,9 @@ h1 {
   @media screen and (min-width: $large){
     font-size: $font-xxlarge;
   }
-  & + p {
-    margin-top: .625em;
-    color: $gray;
-    font-size: $font-small;
-    @media screen and (min-width: $small){
-      font-size: $font-medium;
-      padding-right: 0;
-    }
-    @media screen and (min-width: $medium){
-      font-size: $font-medium-large;
-      padding-right: 3.75em;
-    }
-    @media screen and (min-width: $large) {
-      font-size: $font-large;
-    }
-  }
 }
 h2 {
-  letter-spacing: -1px;
+  letter-spacing: -.03em;
   @media screen and (min-width: $small){
     font-size: $font-medium-large;
   }
@@ -54,8 +37,12 @@ h2 {
 }
 h3 {
   font-size: $font-small;
+  letter-spacing: -.03em;
   padding: 0;
   margin: 0;
+  @media screen and (min-width: $small-medium){
+    font-size: $font-medium;
+  }
 }
 h5 {
   margin: 0;
@@ -65,4 +52,8 @@ figcaption {
   font-size: $font-xsmall;
   color: $gray;
   line-height: 1.5em;
+}
+a {
+  color: $blue;
+  text-decoration: none;
 }

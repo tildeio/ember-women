@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$medium".
-        on line 16 of /Users/jeffdaley/Code/ember-women/source/sass/home.scss
+        on line 17 of /Users/jeffdaley/Code/ember-women/source/sass/home.scss
 
-11:       position: absolute;
-12:       left: 0;
-13:       top: 0;
-14:       background-color: #211206; //Dark Black
-15:       opacity: .7;
-16:       @media screen and (min-width: $medium){
-17:         display: none;
-18:       }
-19:     }
-20:     position: relative;
-21:     @include at2x('../images/lauren-tan-speaking', jpg, 300%, auto);
+12:       position: absolute;
+13:       left: 0;
+14:       top: 0;
+15:       background-color: #211206; //Dark Black
+16:       opacity: .7;
+17:       @media screen and (min-width: $medium){
+18:         display: none;
+19:       }
+20:     }
+21:     position: relative;
+22:     @include at2x('../images/lauren-tan-speaking', jpg, 300%, auto);
 
 Backtrace:
-/Users/jeffdaley/Code/ember-women/source/sass/home.scss:16
+/Users/jeffdaley/Code/ember-women/source/sass/home.scss:17
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:536:in `run_interp_no_strip'
@@ -95,4 +95,4 @@ org/jruby/RubyProc.java:271:in `call'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$medium\".\A         on line 16 of /Users/jeffdaley/Code/ember-women/source/sass/home.scss\A \A 11:       position: absolute;\A 12:       left: 0;\A 13:       top: 0;\A 14:       background-color: #211206; //Dark Black\A 15:       opacity: .7;\A 16:       @media screen and (min-width: $medium){\A 17:         display: none;\A 18:       }\A 19:     }\A 20:     position: relative;\A 21:     @include at2x('../images/lauren-tan-speaking', jpg, 300%, auto);"; }
+  content: "Error: Undefined variable: \"$medium\".\A         on line 17 of /Users/jeffdaley/Code/ember-women/source/sass/home.scss\A \A 12:       position: absolute;\A 13:       left: 0;\A 14:       top: 0;\A 15:       background-color: #211206; //Dark Black\A 16:       opacity: .7;\A 17:       @media screen and (min-width: $medium){\A 18:         display: none;\A 19:       }\A 20:     }\A 21:     position: relative;\A 22:     @include at2x('../images/lauren-tan-speaking', jpg, 300%, auto);"; }

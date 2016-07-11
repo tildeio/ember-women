@@ -1,0 +1,66 @@
+---
+title: Become a Sponsor | Ember Women Helping Women
+---
+<section class="become-a-sponsor">
+  <%= partial "header" %>
+  <section class="page-intro">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>Become a sponsor.</h1>
+        <p>Support women in tech by sponsoring Ember's Women Helping Women program. Your contributions allow us to organize more learning events, meetups and community activities that educate and encourage the industry's next generation of thought leaders.</p>
+        <p class="call-to-action"><a href="mailto:sponsorships@emberwomen.com?subject=Ember%20Women%20Helping%20Women%20Sponsorship" class="button">Send us an email</a> <span>to learn more about sponsorships.</span></p>
+      </div>
+    </div>
+  </section>
+  <section class="previous-xsponsors">
+    <div class="row">
+      <div class="small-12 columns">
+        <div class="hairline-top-wrapper">
+          <h3>Special thanks to our 2015 sponsors.</h3>
+          <ul class="xsponsors centered">
+            <% data.sponsors.each do |sponsor| %>
+              <li>
+                <a href="<%= sponsor.website %>">
+                  <span></span><img src="images/<%= sponsor.image %>" alt="<%= sponsor.name %>" data-no-retina>
+                </a>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <%= partial "footer" %>
+
+  <script>
+  $(document).ready(function() {
+    $('.video-thumb').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+
+      fixedContentPos: false
+    });
+  });
+  </script>
+  <script> // Animate Scroll-To Links
+  $(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+      $('html, body').delay(60);
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top - 120
+      }, 260, function () {
+        window.location.hash = target;
+      });
+    });
+  });
+  </script>
+</section>

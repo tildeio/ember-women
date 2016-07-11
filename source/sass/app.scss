@@ -5,6 +5,8 @@
 @import 'home';
 @import 'the-program';
 @import 'the-women';
+@import 'become-a-sponsor';
+@import 'contact';
 @import 'video-popup';
 
 
@@ -19,7 +21,7 @@
 .purple {background: purple;}
 
 
-/* Foundation Overrides
+/* Foundation Overrides, Misc Global Elements
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 ul {
@@ -31,7 +33,17 @@ a {
 p {
   color: $gray;
 }
-
+body {
+  background-color: $black;
+}
+body > section {
+  background-color: $page-bg;
+}
+.hairline-top-wrapper {
+  border-top: 1px solid $hairline;
+  padding-top: 2em;
+  margin-top: 2em;
+}
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -57,6 +69,11 @@ p {
     width: 100%;
     z-index: 2;
     border-color: $blue;
+  }
+  &.stroked {
+    color: $blue;
+    background: none;
+    border: 1px solid $blue;
   }
 }
 
@@ -133,6 +150,13 @@ p {
     }
   }
 }
+.the-program #the-program,
+.the-women #the-women {
+  font-weight: bold;
+  color: $black;
+  letter-spacing: -.03em;
+}
+
 .page-footer {
   background: $black;
   a {
@@ -143,8 +167,27 @@ p {
   }
 }
 .border-wrapper {
-  border-bottom: 1px solid $hairline-gray;
+  border-bottom: 1px solid $hairline;
   padding-bottom: 5em;
+}
+
+.page-intro {
+  p {
+    margin-top: .625em;
+    color: $gray;
+    font-size: $font-small;
+    @media screen and (min-width: $small){
+      font-size: $font-medium;
+      padding-right: 0;
+    }
+    @media screen and (min-width: $medium){
+      font-size: $font-medium-large;
+      padding-right: 3.75em;
+    }
+    @media screen and (min-width: $large) {
+      font-size: $font-large;
+    }
+  }
 }
 
 
@@ -212,7 +255,7 @@ p {
   text-align: center;
   padding-top: 3em;
   .border-wrapper {
-    border-bottom: 1px solid $hairline-gray;
+    border-bottom: 1px solid $hairline;
     padding-bottom: 5em;
   }
   input {

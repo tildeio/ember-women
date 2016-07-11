@@ -14,7 +14,7 @@ title: The Women | Ember Women Helping Women
   <section class="women-list">
     <div class="row collapse">
       <div class="small-12 columns">
-        <ul class=" small-up-2 medium-up-3 large-up-4">
+        <ul class="small-up-2 medium-up-3 large-up-4">
           <% data.the_women.shuffle.each do |woman| %>
           <li class="woman column" id="<%= woman.anchor %>">
             <a href="#<%= woman.anchor %>">
@@ -25,15 +25,13 @@ title: The Women | Ember Women Helping Women
               <div class="basic-info">
                 <h3 class="woman-name"><%= woman.name %></h3>
                 <p class="job-title"><%= woman.job_title %></p>
-                <!-- <p class="location"><%= woman.location %></p> -->
+                <p class="location"><%= woman.location %></p>
               </div>
             </a>
             <section class="expand">
               <div class="row">
-                <% if woman.youtube present? %>
+
                 <div class="small-12 medium-9 large-9 columns">
-                  <!-- <h2><%= woman.name %></h2> -->
-                  <!-- <a href="http://twitter.com/<%= woman.twitter %>" class="twitter" title="<%= woman.name %> on Twitter"></a> -->
 
                   <p class="bio"><%= woman.bio %></p>
                   <% if woman.link1 present? %>
@@ -48,41 +46,22 @@ title: The Women | Ember Women Helping Women
                     <% end %>
                   </ul>
                   <% end %>
+                  <p class="contact-cta"><a href="#" class="button stroked">Inquire about speaking</a></p>
                 </div>
                 <div class="small-12 medium-3 large-3 columns">
+                  <% if woman.youtube present? %>
                   <a href="https://www.youtube.com/watch?v=<%= woman.youtube %>" class="video-thumb">
                     <figure>
-                      <div> <!-- Because the IMG tag doesn't allow pseudo elements (the play icon) -->
+                      <div>
                         <img src="http://i.ytimg.com/vi/<%= woman.youtube %>/hqdefault.jpg" alt="Watch <%= woman.youtube_title %>r">
-                        <!-- <img src="images/leah-silber-talk.png"  alt="<%= woman.youtube_title %>"/> -->
                       </div>
                       <figcaption>
                         “Building an OSS-Centric Company”
                       </figcaption>
                     </figure>
                   </a>
-                </div>
-                <% else %>
-                <div class="small-12 medium-9 large-9 columns">
-                  <!-- <h2><%= woman.name %></h2> -->
-                  <!-- <a href="http://twitter.com/<%= woman.twitter %>" class="twitter" title="<%= woman.name %>"></a> -->
-                  <p class="bio"><%= woman.bio %></p>
-                </div>
-                <div class="small-12 medium-3 large-3 columns">
-                  <% if woman.link1 present? %>
-                  <ul class="other-links">
-                    <li>
-                      <a href="<%= woman.link1 %>"><%= woman.link1_desc %></a>
-                    </li>
-                    <% if woman.link2 present? %>
-                    <li>
-                      <a href="<%= woman.link2 %>"><%= woman.link2_desc %></a>
-                    </li>
-                    <% end %>
-                  </ul>
                   <% end %>
                 </div>
-                <% end %>
               </div>
             </section>
           </li>
@@ -126,4 +105,21 @@ title: The Women | Ember Women Helping Women
     });
   });
   </script>
+
+
+<script>
+$('p.bio').each(function() {
+    var word = $(this).html();
+    var index = word.indexOf(' ');
+    if(index == -1) {
+        index = word.length;
+    }
+    $(this).html('<span class="first-word">' + word.substring(0, index) + '</span>' + word.substring(index, word.length));
+});
+</script>
+
+
+
+
+
 </section>

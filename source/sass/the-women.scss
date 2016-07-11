@@ -11,6 +11,8 @@
       width: 100%;
       position: relative;
       padding: .5em;
+      border-bottom: 1px solid $hairline;
+      overflow: hidden;
       li{
         position: relative;
         margin: 0;
@@ -19,11 +21,26 @@
         &.woman {
           a {
             div.woman-thumb {
-              background: $orange;
               display: block;
               position: relative;
               padding-bottom: 65%;
               overflow: hidden;
+              &:after {
+                content: '';
+                height: 100%;
+                width: 100%;
+                display: block;
+                background: black;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: .2;
+              }
+              &:hover {
+                &:after {
+                  opacity: .05;
+                }
+              }
               img {
                 width: 100%;
                 display: block;
@@ -31,10 +48,6 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                opacity: .8;
-                &:hover {
-                  opacity: .95;
-                }
               }
               p.mentor-badge {
                 position: absolute;
@@ -49,42 +62,48 @@
                 padding: .25em;
                 font-size: $font-xxsmall;
                 padding: .25em .75em;
+                z-index: 99;
               }
             }
           }
           div.basic-info {
-            text-align: center;
             padding-left: .25em;
             padding-right: .25em;
             margin-top: .75em;
             h3 {
-              line-height: 1.3em;
+              line-height: 1.2em;
               color: $black;
             }
             p {
               &.job-title {
                 color: $gray;
-                margin: .3em 0 0;
+                margin: .4em 0 0;
                 display: block;
                 line-height: 1.3em;
                 font-size: $font-xsmall;
               }
               &.location {
+                background: $drawer-bg;
+                padding: .2em .7em .1em;
+                @include border-radius(9999em);
                 font-size: $font-xxsmall;
-                line-height: 1.2em;
+                line-height: 1.3em;
                 display: inline-block;
+                margin: .4em 0 0;
+
                 // text-transform: uppercase;
               }
             }
-            min-height: 6em;
+            min-height: 8em;
+            padding-bottom: 3em;
             @media screen and (min-width: $medium){
-              min-height: 7em;
-            }
-            @media screen and (min-width: $medium-large){
               min-height: 8em;
             }
+            @media screen and (min-width: $medium-large){
+              min-height: 9em;
+            }
             @media screen and (min-width: $large){
-              min-height: 7.25em;
+              min-height: 8em;
             }
           }
           &:nth-child(2n+1){
@@ -237,6 +256,11 @@
                     }
                   }
                   &.bio {
+                    .first-word {
+                      font-weight: bold;
+                      color: $black;
+                      letter-spacing: -.03em;
+                    }
                     &:first-child {
                       margin-top: 0;
                     }
@@ -245,6 +269,12 @@
                       &:hover {
                         color: $dark-blue;
                       }
+                    }
+                  }
+                  &.contact-cta {
+                    .button {
+                      padding-left: 2em;
+                      padding-right: 2em;
                     }
                   }
                 }
@@ -267,7 +297,6 @@
                     div {
                       position: relative;
                       display: inline-block;
-                      background: $black;
                       &:after {
                         content: '';
                         @include at2x('../images/icon-play', png, 100%);
@@ -324,15 +353,26 @@
                 ul.other-links {
                   margin: 0;
                   padding: 0;
+                  border: none;
                   li {
                     display: block;
                     width: 100%;
                     padding: 0;
+                    &:before {
+                      content: '';
+                      display: inline-block;
+                      @include at2x('../images/icon-link', png, 100%);
+                      width: .8125em;
+                      height: .8125em;
+                      top: .1em;
+                      margin-right: .25em;
+                      position: relative;
+                    }
                     a {
-                      color: $blue;
+                      color: $gray;
                       font-size: $font-xsmall;
                       &:hover {
-                        color: $dark-blue;
+                        color: $blue;
                       }
                     }
                   }
@@ -340,29 +380,51 @@
               }
             }
           }
+
           &.inactive {
             a {
-              &:hover {
-                .woman-thumb {
-                  opacity: 1;
-                  background: $orange;
-                  img {
-                    opacity: .8;
-                  }
-                }
-                .basic-info {
-                  opacity: 1;
-                }
+              & * {
+                opacity: .5;
               }
               div.woman-thumb {
-                opacity: .5;
-                background: $black;
+                @include transition(opacity 500ms);
+                -webkit-backface-visibility: hidden;
                 img {
-                  opacity: .5;
+                  @include transition(opacity 500ms);
+                  -webkit-backface-visibility: hidden;
                 }
               }
               div.basic-info {
-                opacity: .1;
+                opacity: .3;
+                @include transition(opacity 500ms);
+                -webkit-backface-visibility: hidden;
+              }
+            }
+          }
+          &.semi-active {
+            &:hover * {
+                opacity: 1;
+                div.basic-info {
+                  opacity: 1;
+                }
+            }
+            a {
+              & * {
+                opacity: .8;
+              }
+
+              div.woman-thumb {
+                @include transition(opacity 500ms);
+                -webkit-backface-visibility: hidden;
+                  img {
+                    @include transition(opacity 500ms);
+                    -webkit-backface-visibility: hidden;
+                  }
+              }
+              div.basic-info {
+                opacity: .5;
+                @include transition(opacity 500ms);
+                -webkit-backface-visibility: hidden;
               }
             }
           }
@@ -370,12 +432,13 @@
             .woman-thumb{
               @include transform(scale(1.15));
               @include transform-origin(bottom center);
-              z-index: 9999;
+              -webkit-backface-visibility: hidden;
+              z-index: 100;
               @media screen and (min-width: $large){
                 @include transform(scale(1.25));
               }
               img {
-                opacity: .9;
+                opacity: 1;
                 width: 100%;
               }
             }
@@ -424,8 +487,6 @@
             }
           }
         }
-
-
       }
     }
   }
