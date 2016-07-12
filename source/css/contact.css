@@ -5,8 +5,8 @@
 #public #header {
   display: none;
 }
-/* line 30, ../sass/contact.scss */
-#public ul li.inquiry-type span {
+/* line 28, ../sass/contact.scss */
+#public li.inquiry-type span {
   width: 33%;
   float: left;
 }

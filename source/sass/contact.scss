@@ -24,14 +24,10 @@
   #header {
     display:none;
   }
-  ul {
-    li {
-      &.inquiry-type {
-        span {
-          width: 33%;
-          float: left;
-        }
-      }
+  li.inquiry-type {
+    span {
+      width: 33%;
+      float: left;
     }
   }
   .women-list {
