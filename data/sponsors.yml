@@ -1,6 +1,18 @@
+no event:
+- name: "Tilde"
+  image: tilde-logo.png
+  website: "http://www.stickermule.com/unlock?ref_id=3368978601"
+EmberConf 2016:
 - name: "Dockyard"
   image: dockyard-logo.png
   website: "http://www.stickermule.com/unlock?ref_id=3368978601"
 - name: "Fastly"
   image: fastly-logo.png
   website: "http://echobind.com/emberconf/"
+# EmberConf 20168:
+# - name: "Dockyard"
+#   image: dockyard-logo.png
+#   website: "http://www.stickermule.com/unlock?ref_id=3368978601"
+# - name: "Fastly"
+#   image: fastly-logo.png
+#   website: "http://echobind.com/emberconf/"

@@ -1,22 +1,40 @@
 /* Contact
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.contact {
-  .page-intro {
-    ul {
-      list-style: none;
-      border-bottom: 1px solid $hairline;
-      margin-bottom: 0;
-      padding-bottom: 5em;
-      margin-top: 3.5em;
-      li {
-        h3 {
-          font-size: $font-medium-large;
-        }
-        p {
-          font-size: $font-small;
-          margin: 0;
+// .contact {
+//   .page-intro {
+//     ul {
+//       list-style: none;
+//       border-bottom: 1px solid $hairline;
+//       margin-bottom: 0;
+//       padding-bottom: 5em;
+//       margin-top: 3.5em;
+//       li {
+//         h3 {
+//           font-size: $font-medium-large;
+//         }
+//         p {
+//           font-size: $font-small;
+//           margin: 0;
+//         }
+//       }
+//     }
+//   }
+// }
+#public { // This is WuFoo's body ID
+  #header {
+    display:none;
+  }
+  ul {
+    li {
+      &.inquiry-type {
+        span {
+          width: 33%;
+          float: left;
         }
       }
     }
+  }
+  .women-list {
+
   }
 }

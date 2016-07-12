@@ -1,7 +1,6 @@
 //= require "jquery.js"
+//= require "foundation.min.js"
 //= require "expand.js"
-//= require "expand2.js"
-//= require "foundation.js"
 //= require "magnificent-popup.js"
 //= require "app.js"
 //= require "retina.js"

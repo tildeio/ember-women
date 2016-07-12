@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$font-small".
-        on line 11 of /Users/jeffdaley/Code/ember-women/source/sass/become-a-sponsor.scss
+        on line 10 of /Users/jeffdaley/Code/ember-women/source/sass/become-a-sponsor.scss
 
-6:     .button {
-7:       padding-left: 2em;
-8:       padding-right: 2em;
-9:     }
-10:     .call-to-action {
-11:       font-size: $font-small;
-12:       .button {
-13:         vertical-align: baseline;
-14:       }
-15:       span {
-16:         display: block;
+5:     .button {
+6:       padding-left: 2em;
+7:       padding-right: 2em;
+8:     }
+9:     .call-to-action {
+10:       font-size: $font-small;
+11:       .button {
+12:         vertical-align: baseline;
+13:       }
+14:       span {
+15:         display: block;
 
 Backtrace:
-/Users/jeffdaley/Code/ember-women/source/sass/become-a-sponsor.scss:11
+/Users/jeffdaley/Code/ember-women/source/sass/become-a-sponsor.scss:10
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -91,4 +91,4 @@ org/jruby/RubyProc.java:271:in `call'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$font-small\".\A         on line 11 of /Users/jeffdaley/Code/ember-women/source/sass/become-a-sponsor.scss\A \A 6:     .button {\A 7:       padding-left: 2em;\A 8:       padding-right: 2em;\A 9:     }\A 10:     .call-to-action {\A 11:       font-size: $font-small;\A 12:       .button {\A 13:         vertical-align: baseline;\A 14:       }\A 15:       span {\A 16:         display: block;"; }
+  content: "Error: Undefined variable: \"$font-small\".\A         on line 10 of /Users/jeffdaley/Code/ember-women/source/sass/become-a-sponsor.scss\A \A 5:     .button {\A 6:       padding-left: 2em;\A 7:       padding-right: 2em;\A 8:     }\A 9:     .call-to-action {\A 10:       font-size: $font-small;\A 11:       .button {\A 12:         vertical-align: baseline;\A 13:       }\A 14:       span {\A 15:         display: block;"; }

@@ -222,7 +222,7 @@ a {
 @media screen and (min-width: 40.0625em) {
   /* line 85, ../sass/home.scss */
   .home .showcase .page-intro p {
-    padding-right: 5em;
+    padding-right: 4em;
   }
 }
 /* line 92, ../sass/home.scss */
@@ -510,7 +510,7 @@ a {
   height: 100%;
   width: 100%;
   display: block;
-  background: black;
+  background: orange;
   position: absolute;
   top: 0;
   left: 0;
@@ -1096,45 +1096,43 @@ a {
 
 /* Become a Sponsor
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 6, ../sass/become-a-sponsor.scss */
+/* line 5, ../sass/become-a-sponsor.scss */
 .become-a-sponsor .page-intro .button {
   padding-left: 2em;
   padding-right: 2em;
 }
-/* line 10, ../sass/become-a-sponsor.scss */
+/* line 9, ../sass/become-a-sponsor.scss */
 .become-a-sponsor .page-intro .call-to-action {
   font-size: 0.9375em;
 }
-/* line 12, ../sass/become-a-sponsor.scss */
+/* line 11, ../sass/become-a-sponsor.scss */
 .become-a-sponsor .page-intro .call-to-action .button {
   vertical-align: baseline;
 }
-/* line 15, ../sass/become-a-sponsor.scss */
+/* line 14, ../sass/become-a-sponsor.scss */
 .become-a-sponsor .page-intro .call-to-action span {
   display: block;
 }
 @media screen and (min-width: 40.0625em) {
-  /* line 15, ../sass/become-a-sponsor.scss */
+  /* line 14, ../sass/become-a-sponsor.scss */
   .become-a-sponsor .page-intro .call-to-action span {
     padding-left: .75em;
     display: inline-block;
   }
 }
 /* line 24, ../sass/become-a-sponsor.scss */
-.become-a-sponsor .previous-xsponsors {
-  padding-bottom: 5em;
+.become-a-sponsor .xsponsor-list h2 {
+  margin-top: 1.5em;
 }
-/* line 26, ../sass/become-a-sponsor.scss */
-.become-a-sponsor .previous-xsponsors h3 {
-  margin-top: 1em;
-}
-/* line 29, ../sass/become-a-sponsor.scss */
-.become-a-sponsor .previous-xsponsors ul {
+/* line 27, ../sass/become-a-sponsor.scss */
+.become-a-sponsor .xsponsor-list ul.xsponsors {
   list-style: none;
-  margin-top: 2em;
+  margin-top: 1em;
+  overflow: hidden;
 }
-/* line 32, ../sass/become-a-sponsor.scss */
-.become-a-sponsor .previous-xsponsors ul li {
+/* line 31, ../sass/become-a-sponsor.scss */
+.become-a-sponsor .xsponsor-list ul.xsponsors li.xsponsor {
+  margin-top: 0;
   width: 50%;
   float: left;
   display: table-cell;
@@ -1144,13 +1142,13 @@ a {
   padding: .25em 3em .25em 0;
 }
 @media screen and (min-width: 40.0625em) {
-  /* line 32, ../sass/become-a-sponsor.scss */
-  .become-a-sponsor .previous-xsponsors ul li {
-    width: 25%;
+  /* line 31, ../sass/become-a-sponsor.scss */
+  .become-a-sponsor .xsponsor-list ul.xsponsors li.xsponsor {
+    width: 50%;
   }
 }
 /* line 43, ../sass/become-a-sponsor.scss */
-.become-a-sponsor .previous-xsponsors ul li span {
+.become-a-sponsor .xsponsor-list ul.xsponsors li.xsponsor span {
   display: inline-block;
   height: 100%;
   width: 1px;
@@ -1158,29 +1156,67 @@ a {
   vertical-align: middle;
 }
 /* line 50, ../sass/become-a-sponsor.scss */
-.become-a-sponsor .previous-xsponsors ul li img {
+.become-a-sponsor .xsponsor-list ul.xsponsors li.xsponsor img {
   max-height: 100%;
   vertical-align: middle;
+}
+/* line 56, ../sass/become-a-sponsor.scss */
+.become-a-sponsor .xsponsor-list .general-xsponsors {
+  padding-bottom: 1em;
+}
+/* line 58, ../sass/become-a-sponsor.scss */
+.become-a-sponsor .xsponsor-list .general-xsponsors h3 {
+  margin-top: 1em;
+}
+/* line 66, ../sass/become-a-sponsor.scss */
+.become-a-sponsor .xsponsor-list .previous-xsponsors {
+  padding-bottom: 6em;
+}
+/* line 69, ../sass/become-a-sponsor.scss */
+.become-a-sponsor .xsponsor-list .previous-xsponsors ol.xsponsor-events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 74, ../sass/become-a-sponsor.scss */
+.become-a-sponsor .xsponsor-list .previous-xsponsors ol.xsponsor-events li.xsponsor-event {
+  display: block;
+  position: relative;
+  margin-bottom: 2em;
+}
+@media screen and (min-width: 40.0625em) {
+  /* line 74, ../sass/become-a-sponsor.scss */
+  .become-a-sponsor .xsponsor-list .previous-xsponsors ol.xsponsor-events li.xsponsor-event {
+    margin-bottom: 4em;
+  }
+}
+/* line 81, ../sass/become-a-sponsor.scss */
+.become-a-sponsor .xsponsor-list .previous-xsponsors ol.xsponsor-events li.xsponsor-event h3 {
+  font-weight: normal;
+  color: #817B74;
+  letter-spacing: 0;
+  font-size: 0.8125em;
+  position: relative;
+}
+@media screen and (min-width: 40.0625em) {
+  /* line 81, ../sass/become-a-sponsor.scss */
+  .become-a-sponsor .xsponsor-list .previous-xsponsors ol.xsponsor-events li.xsponsor-event h3 {
+    position: absolute;
+    bottom: -3em;
+    margin-top: 1em;
+  }
 }
 
 /* Contact
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 5, ../sass/contact.scss */
-.contact .page-intro ul {
-  list-style: none;
-  border-bottom: 1px solid #C8C3C3;
-  margin-bottom: 0;
-  padding-bottom: 5em;
-  margin-top: 3.5em;
+/* line 24, ../sass/contact.scss */
+#public #header {
+  display: none;
 }
-/* line 12, ../sass/contact.scss */
-.contact .page-intro ul li h3 {
-  font-size: 1.3125em;
-}
-/* line 15, ../sass/contact.scss */
-.contact .page-intro ul li p {
-  font-size: 0.9375em;
-  margin: 0;
+/* line 30, ../sass/contact.scss */
+#public ul li.inquiry-type span {
+  width: 33%;
+  float: left;
 }
 
 /* YouTube Pop-Up Styles
@@ -1703,7 +1739,7 @@ p {
 
 /* line 36, ../sass/app.scss */
 body {
-  background-color: #120C07;
+  background-color: #EEEBEB;
 }
 
 /* line 39, ../sass/app.scss */
@@ -1924,6 +1960,7 @@ body > section {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+  max-width: 7em;
 }
 @media screen and (min-width: 40.0625em) {
   /* line 205, ../sass/app.scss */
@@ -1933,7 +1970,7 @@ body > section {
     margin-left: 5px;
   }
 }
-/* line 216, ../sass/app.scss */
+/* line 217, ../sass/app.scss */
 .xsponsors-footer div .button {
   position: relative;
   font-size: 0.8125em;
@@ -1942,32 +1979,32 @@ body > section {
   margin-top: .625em;
 }
 @media screen and (min-width: 64.0625em) {
-  /* line 216, ../sass/app.scss */
+  /* line 217, ../sass/app.scss */
   .xsponsors-footer div .button {
     position: absolute;
     top: 2.75em;
     right: 0;
   }
 }
-/* line 228, ../sass/app.scss */
+/* line 229, ../sass/app.scss */
 .xsponsors-footer div .stroked {
   background: none;
   border: 1px solid #00ADC4;
   color: #00ADC4;
   transition: none;
 }
-/* line 233, ../sass/app.scss */
+/* line 234, ../sass/app.scss */
 .xsponsors-footer div .stroked:hover {
   border-color: #007E9D;
   color: #007E9D;
   transition: none;
 }
-/* line 239, ../sass/app.scss */
+/* line 240, ../sass/app.scss */
 .xsponsors-footer div p {
   font-size: 0.9375em;
   color: #817B74;
 }
-/* line 242, ../sass/app.scss */
+/* line 243, ../sass/app.scss */
 .xsponsors-footer div p span {
   color: #120C07;
   font-weight: bold;
@@ -1975,17 +2012,17 @@ body > section {
 
 /* Email CTA
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 254, ../sass/app.scss */
+/* line 255, ../sass/app.scss */
 .email-signup {
   text-align: center;
   padding-top: 3em;
 }
-/* line 257, ../sass/app.scss */
+/* line 258, ../sass/app.scss */
 .email-signup .border-wrapper {
   border-bottom: 1px solid #C8C3C3;
   padding-bottom: 5em;
 }
-/* line 261, ../sass/app.scss */
+/* line 262, ../sass/app.scss */
 .email-signup input {
   width: 100%;
   height: 100%;
@@ -1994,15 +2031,15 @@ body > section {
   padding: 0.5em 1em;
   height: 3.125em;
 }
-/* line 269, ../sass/app.scss */
+/* line 270, ../sass/app.scss */
 .email-signup p {
   font-size: 0.8125em;
 }
-/* line 272, ../sass/app.scss */
+/* line 273, ../sass/app.scss */
 .email-signup h2 {
   margin-bottom: 0;
 }
-/* line 275, ../sass/app.scss */
+/* line 276, ../sass/app.scss */
 .email-signup #mc_embed_signup {
   margin-top: 1.5em;
 }
