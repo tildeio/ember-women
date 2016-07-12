@@ -6,11 +6,11 @@
   display: none;
 }
 /* line 27, ../sass/contact.scss */
-#public li.inquiry-type {
+#public li#fo50li1 {
   background: red;
 }
 /* line 29, ../sass/contact.scss */
-#public li.inquiry-type span {
+#public li#fo50li1 span {
   width: 33%;
   float: left;
 }
