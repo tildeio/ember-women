@@ -1213,7 +1213,11 @@ a {
 #public #header {
   display: none;
 }
-/* line 28, ../sass/contact.scss */
+/* line 27, ../sass/contact.scss */
+#public li.inquiry-type {
+  background: red;
+}
+/* line 29, ../sass/contact.scss */
 #public li.inquiry-type span {
   width: 33%;
   float: left;
