@@ -6,11 +6,15 @@
   display: none;
 }
 /* line 27, ../sass/contact.scss */
-#public li#fo50li1 {
+#public #fo50li1 {
   background: red;
 }
 /* line 29, ../sass/contact.scss */
-#public li#fo50li1 span {
+#public #fo50li1 span {
   width: 33%;
   float: left;
+}
+/* line 34, ../sass/contact.scss */
+#public .women-list {
+  background: blue;
 }
