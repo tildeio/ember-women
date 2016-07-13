@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$small".
-        on line 22 of /Users/jeffdaley/Code/ember-women/source/sass/typography.scss
+        on line 23 of /Users/jeffdaley/Code/ember-women/source/sass/typography.scss
 
-17: h1 {
-18:   font-size: $font-large;
-19:   line-height: 1.2em;
-20:   margin: 0;
-21:   letter-spacing: -2px;
-22:   @media screen and (min-width: $small){
-23:     font-size: $font-xlarge;
-24:   }
-25:   @media screen and (min-width: $large){
-26:     font-size: $font-xxlarge;
-27:   }
+18: h1 {
+19:   font-size: $font-large;
+20:   line-height: 1.2em;
+21:   margin: 0;
+22:   letter-spacing: -2px;
+23:   @media screen and (min-width: $small){
+24:     font-size: $font-xlarge;
+25:   }
+26:   @media screen and (min-width: $large){
+27:     font-size: $font-xxlarge;
+28:   }
 
 Backtrace:
-/Users/jeffdaley/Code/ember-women/source/sass/typography.scss:22
+/Users/jeffdaley/Code/ember-women/source/sass/typography.scss:23
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:536:in `run_interp_no_strip'
@@ -73,4 +73,4 @@ org/jruby/RubyProc.java:271:in `call'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$small\".\A         on line 22 of /Users/jeffdaley/Code/ember-women/source/sass/typography.scss\A \A 17: h1 {\A 18:   font-size: $font-large;\A 19:   line-height: 1.2em;\A 20:   margin: 0;\A 21:   letter-spacing: -2px;\A 22:   @media screen and (min-width: $small){\A 23:     font-size: $font-xlarge;\A 24:   }\A 25:   @media screen and (min-width: $large){\A 26:     font-size: $font-xxlarge;\A 27:   }"; }
+  content: "Error: Undefined variable: \"$small\".\A         on line 23 of /Users/jeffdaley/Code/ember-women/source/sass/typography.scss\A \A 18: h1 {\A 19:   font-size: $font-large;\A 20:   line-height: 1.2em;\A 21:   margin: 0;\A 22:   letter-spacing: -2px;\A 23:   @media screen and (min-width: $small){\A 24:     font-size: $font-xlarge;\A 25:   }\A 26:   @media screen and (min-width: $large){\A 27:     font-size: $font-xxlarge;\A 28:   }"; }

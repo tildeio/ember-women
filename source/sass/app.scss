@@ -1,3 +1,4 @@
+@import 'foundation';
 @import 'breakpoints';
 @import 'colors';
 @import 'typography';
@@ -33,8 +34,8 @@ a {
 p {
   color: $gray;
 }
-body {
-  background-color: $page-bg;
+body, html {
+  background-color: $page-bg !important;
 }
 body > section {
   background-color: $page-bg;
@@ -43,6 +44,11 @@ body > section {
   border-top: 1px solid $hairline;
   padding-top: 2em;
   margin-top: 2em;
+}
+.hairline-bottom-wrapper {
+  border-bottom: 1px solid $hairline;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 /* Buttons
