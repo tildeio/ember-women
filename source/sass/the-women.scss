@@ -12,7 +12,7 @@
       position: relative;
       padding: .5em;
       border-bottom: 1px solid $hairline;
-      overflow: hidden;
+      overflow: visible;
       li{
         position: relative;
         margin: 0;
@@ -47,7 +47,7 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                @include translate(-50%, -50%);
               }
               p.mentor-badge {
                 position: absolute;
@@ -109,21 +109,21 @@
           &:nth-child(2n+1){
             // Every 1st, 3rd, 5th, etc.
             .expand {
-                margin-left: 0em;
-                &:after {
-                  left: 25%;
-                  margin-left: -.9375em;
-                }
+              margin-left: 0em;
+              &:after {
+                left: 25%;
+                margin-left: -.9375em;
+              }
             }
           }
           &:nth-child(2n+2){
             // Every 2nd, 4th, 6th, etc.
             .expand {
-                margin-left: -104.1567912%; // (Images + padding width) divided by image width
-                &:after {
-                  left: 75%;
-                  margin-left: -.9375em;
-                }
+              margin-left: -104.1567912%; // (Images + padding width) divided by image width
+              &:after {
+                left: 75%;
+                margin-left: -.9375em;
+              }
 
             }
           }
@@ -281,6 +281,7 @@
                 a.video-thumb {
                   display: inline-block;
                   margin-top: 1.25em;
+                  width: 100%;
                   @media screen and (min-width: $medium){
                     margin-top: 0;
                   }
@@ -295,6 +296,7 @@
                     display: inline-block;
                     position: relative;
                     div {
+                      width: 100%;
                       position: relative;
                       display: inline-block;
                       &:after {
@@ -384,7 +386,10 @@
           &.inactive {
             a {
               & * {
-                opacity: .5;
+                opacity: .8;
+                @media screen and (min-width: $small-medium){
+                  opacity: .5;
+                }
               }
               div.woman-thumb {
                 @include transition(opacity 500ms);
@@ -395,18 +400,21 @@
                 }
               }
               div.basic-info {
-                opacity: .3;
+                opacity: .6;
                 @include transition(opacity 500ms);
                 -webkit-backface-visibility: hidden;
+                @media screen and (min-width: $small-medium){
+                  opacity: .3;
+                }
               }
             }
           }
           &.semi-active {
             &:hover * {
+              opacity: 1;
+              div.basic-info {
                 opacity: 1;
-                div.basic-info {
-                  opacity: 1;
-                }
+              }
             }
             a {
               & * {
@@ -416,10 +424,10 @@
               div.woman-thumb {
                 @include transition(opacity 500ms);
                 -webkit-backface-visibility: hidden;
-                  img {
-                    @include transition(opacity 500ms);
-                    -webkit-backface-visibility: hidden;
-                  }
+                img {
+                  @include transition(opacity 500ms);
+                  -webkit-backface-visibility: hidden;
+                }
               }
               div.basic-info {
                 opacity: .5;

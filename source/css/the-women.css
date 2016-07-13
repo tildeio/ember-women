@@ -8,7 +8,7 @@ Error: Undefined variable: "$hairline".
 12:       position: relative;
 13:       padding: .5em;
 14:       border-bottom: 1px solid $hairline;
-15:       overflow: hidden;
+15:       overflow: visible;
 16:       li{
 17:         position: relative;
 18:         margin: 0;
@@ -95,4 +95,4 @@ org/jruby/RubyProc.java:271:in `call'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$hairline\".\A         on line 14 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss\A \A 9:       margin: 0 auto;\A 10:       text-align: left;\A 11:       width: 100%;\A 12:       position: relative;\A 13:       padding: .5em;\A 14:       border-bottom: 1px solid $hairline;\A 15:       overflow: hidden;\A 16:       li{\A 17:         position: relative;\A 18:         margin: 0;\A 19:         vertical-align: top;"; }
+  content: "Error: Undefined variable: \"$hairline\".\A         on line 14 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss\A \A 9:       margin: 0 auto;\A 10:       text-align: left;\A 11:       width: 100%;\A 12:       position: relative;\A 13:       padding: .5em;\A 14:       border-bottom: 1px solid $hairline;\A 15:       overflow: visible;\A 16:       li{\A 17:         position: relative;\A 18:         margin: 0;\A 19:         vertical-align: top;"; }

@@ -4166,7 +4166,7 @@ a {
   position: relative;
   padding: .5em;
   border-bottom: 1px solid #C8C3C3;
-  overflow: hidden;
+  overflow: visible;
 }
 /* line 16, ../sass/the-women.scss */
 .the-women .women-list ul li {
@@ -4205,6 +4205,10 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 /* line 52, ../sass/the-women.scss */
@@ -4460,6 +4464,7 @@ a {
 .the-women .women-list ul li.woman .expand div div a.video-thumb {
   display: inline-block;
   margin-top: 1.25em;
+  width: 100%;
 }
 @media screen and (min-width: 40.0625em) {
   /* line 281, ../sass/the-women.scss */
@@ -4467,7 +4472,7 @@ a {
     margin-top: 0;
   }
 }
-/* line 287, ../sass/the-women.scss */
+/* line 288, ../sass/the-women.scss */
 .the-women .women-list ul li.woman .expand div div a.video-thumb figure {
   display: inline-block;
   position: relative;
@@ -4477,17 +4482,18 @@ a {
   position: relative;
 }
 @media screen and (min-width: 23.75em) {
-  /* line 287, ../sass/the-women.scss */
+  /* line 288, ../sass/the-women.scss */
   .the-women .women-list ul li.woman .expand div div a.video-thumb figure {
     width: 100%;
   }
 }
-/* line 297, ../sass/the-women.scss */
+/* line 298, ../sass/the-women.scss */
 .the-women .women-list ul li.woman .expand div div a.video-thumb figure div {
+  width: 100%;
   position: relative;
   display: inline-block;
 }
-/* line 300, ../sass/the-women.scss */
+/* line 302, ../sass/the-women.scss */
 .the-women .women-list ul li.woman .expand div div a.video-thumb figure div:after {
   content: '';
   background-image: url("../images/icon-play.png");
@@ -4501,25 +4507,25 @@ a {
   margin-top: -1.875em;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  /* line 300, ../sass/the-women.scss */
+  /* line 302, ../sass/the-women.scss */
   .the-women .women-list ul li.woman .expand div div a.video-thumb figure div:after {
     background-image: url("../images/icon-play@2x.png");
     background-size: 100% auto;
   }
 }
-/* line 313, ../sass/the-women.scss */
+/* line 315, ../sass/the-women.scss */
 .the-women .women-list ul li.woman .expand div div a.video-thumb figure div:hover img {
   opacity: 1;
 }
-/* line 317, ../sass/the-women.scss */
+/* line 319, ../sass/the-women.scss */
 .the-women .women-list ul li.woman .expand div div a.video-thumb figure div img {
   opacity: .75;
 }
-/* line 321, ../sass/the-women.scss */
+/* line 323, ../sass/the-women.scss */
 .the-women .women-list ul li.woman .expand div div a.video-thumb figure figcaption {
   margin-top: .625em;
 }
-/* line 327, ../sass/the-women.scss */
+/* line 329, ../sass/the-women.scss */
 .the-women .women-list ul li.woman .expand div div a.twitter {
   display: inline-block;
   background-image: url("../images/icon-twitter.png");
@@ -4531,50 +4537,50 @@ a {
   position: relative;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  /* line 327, ../sass/the-women.scss */
+  /* line 329, ../sass/the-women.scss */
   .the-women .women-list ul li.woman .expand div div a.twitter {
     background-image: url("../images/icon-twitter@2x.png");
     background-size: 100% auto;
   }
 }
 @media screen and (min-width: 23.75em) {
-  /* line 327, ../sass/the-women.scss */
+  /* line 329, ../sass/the-women.scss */
   .the-women .women-list ul li.woman .expand div div a.twitter {
     top: -1px;
   }
 }
 @media screen and (min-width: 40.0625em) {
-  /* line 327, ../sass/the-women.scss */
+  /* line 329, ../sass/the-women.scss */
   .the-women .women-list ul li.woman .expand div div a.twitter {
     height: 1.5em;
     width: 1.5em;
   }
 }
 @media screen and (min-width: 64.0625em) {
-  /* line 327, ../sass/the-women.scss */
+  /* line 329, ../sass/the-women.scss */
   .the-women .women-list ul li.woman .expand div div a.twitter {
     height: 1.75em;
     width: 1.75em;
     top: .125em;
   }
 }
-/* line 348, ../sass/the-women.scss */
+/* line 350, ../sass/the-women.scss */
 .the-women .women-list ul li.woman .expand div div a.twitter:hover {
   opacity: .8;
 }
-/* line 353, ../sass/the-women.scss */
+/* line 355, ../sass/the-women.scss */
 .the-women .women-list ul li.woman .expand div div ul.other-links {
   margin: 0;
   padding: 0;
   border: none;
 }
-/* line 357, ../sass/the-women.scss */
+/* line 359, ../sass/the-women.scss */
 .the-women .women-list ul li.woman .expand div div ul.other-links li {
   display: block;
   width: 100%;
   padding: 0;
 }
-/* line 361, ../sass/the-women.scss */
+/* line 363, ../sass/the-women.scss */
 .the-women .women-list ul li.woman .expand div div ul.other-links li:before {
   content: '';
   display: inline-block;
@@ -4586,26 +4592,32 @@ a {
   position: relative;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  /* line 361, ../sass/the-women.scss */
+  /* line 363, ../sass/the-women.scss */
   .the-women .women-list ul li.woman .expand div div ul.other-links li:before {
     background-image: url("../images/icon-link@2x.png");
     background-size: 100% auto;
   }
 }
-/* line 371, ../sass/the-women.scss */
+/* line 373, ../sass/the-women.scss */
 .the-women .women-list ul li.woman .expand div div ul.other-links li a {
   color: #817B74;
   font-size: 0.8125em;
 }
-/* line 374, ../sass/the-women.scss */
+/* line 376, ../sass/the-women.scss */
 .the-women .women-list ul li.woman .expand div div ul.other-links li a:hover {
   color: #00ADC4;
 }
-/* line 386, ../sass/the-women.scss */
+/* line 388, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.inactive a * {
-  opacity: .5;
+  opacity: .8;
 }
-/* line 389, ../sass/the-women.scss */
+@media screen and (min-width: 31.5em) {
+  /* line 388, ../sass/the-women.scss */
+  .the-women .women-list ul li.woman.inactive a * {
+    opacity: .5;
+  }
+}
+/* line 394, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.inactive a div.woman-thumb {
   -webkit-transition: opacity 500ms;
   -khtml-transition: opacity 500ms;
@@ -4615,7 +4627,7 @@ a {
   transition: opacity 500ms;
   -webkit-backface-visibility: hidden;
 }
-/* line 392, ../sass/the-women.scss */
+/* line 397, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.inactive a div.woman-thumb img {
   -webkit-transition: opacity 500ms;
   -khtml-transition: opacity 500ms;
@@ -4625,9 +4637,9 @@ a {
   transition: opacity 500ms;
   -webkit-backface-visibility: hidden;
 }
-/* line 397, ../sass/the-women.scss */
+/* line 402, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.inactive a div.basic-info {
-  opacity: .3;
+  opacity: .6;
   -webkit-transition: opacity 500ms;
   -khtml-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
@@ -4636,19 +4648,25 @@ a {
   transition: opacity 500ms;
   -webkit-backface-visibility: hidden;
 }
-/* line 405, ../sass/the-women.scss */
+@media screen and (min-width: 31.5em) {
+  /* line 402, ../sass/the-women.scss */
+  .the-women .women-list ul li.woman.inactive a div.basic-info {
+    opacity: .3;
+  }
+}
+/* line 413, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.semi-active:hover * {
   opacity: 1;
 }
-/* line 407, ../sass/the-women.scss */
+/* line 415, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.semi-active:hover * div.basic-info {
   opacity: 1;
 }
-/* line 412, ../sass/the-women.scss */
+/* line 420, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.semi-active a * {
   opacity: .8;
 }
-/* line 416, ../sass/the-women.scss */
+/* line 424, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.semi-active a div.woman-thumb {
   -webkit-transition: opacity 500ms;
   -khtml-transition: opacity 500ms;
@@ -4658,7 +4676,7 @@ a {
   transition: opacity 500ms;
   -webkit-backface-visibility: hidden;
 }
-/* line 419, ../sass/the-women.scss */
+/* line 427, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.semi-active a div.woman-thumb img {
   -webkit-transition: opacity 500ms;
   -khtml-transition: opacity 500ms;
@@ -4668,7 +4686,7 @@ a {
   transition: opacity 500ms;
   -webkit-backface-visibility: hidden;
 }
-/* line 424, ../sass/the-women.scss */
+/* line 432, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.semi-active a div.basic-info {
   opacity: .5;
   -webkit-transition: opacity 500ms;
@@ -4679,13 +4697,12 @@ a {
   transition: opacity 500ms;
   -webkit-backface-visibility: hidden;
 }
-/* line 432, ../sass/the-women.scss */
+/* line 440, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.active .woman-thumb {
-  -webkit-transform: scale(1.15);
-  -khtml-transform: scale(1.15);
   -moz-transform: scale(1.15);
-  -ms-transform: scale(1.15);
   -o-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
   transform: scale(1.15);
   -webkit-transform-origin: bottom center;
   -khtml-transform-origin: bottom center;
@@ -4697,34 +4714,33 @@ a {
   z-index: 100;
 }
 @media screen and (min-width: 64.0625em) {
-  /* line 432, ../sass/the-women.scss */
+  /* line 440, ../sass/the-women.scss */
   .the-women .women-list ul li.woman.active .woman-thumb {
-    -webkit-transform: scale(1.25);
-    -khtml-transform: scale(1.25);
     -moz-transform: scale(1.25);
-    -ms-transform: scale(1.25);
     -o-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
     transform: scale(1.25);
   }
 }
-/* line 440, ../sass/the-women.scss */
+/* line 448, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.active .woman-thumb img {
   opacity: 1;
   width: 100%;
 }
 @media screen and (min-width: 23.75em) {
-  /* line 446, ../sass/the-women.scss */
+  /* line 454, ../sass/the-women.scss */
   .the-women .women-list ul li.woman.active:nth-last-child(-n+2) .expand {
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 40.0625em) {
-  /* line 453, ../sass/the-women.scss */
+  /* line 461, ../sass/the-women.scss */
   .the-women .women-list ul li.woman.active:nth-last-child(-n+3) .expand {
     margin-bottom: 0;
   }
 }
-/* line 459, ../sass/the-women.scss */
+/* line 467, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.active .expand {
   margin-top: .5em;
   height: auto;
@@ -4734,40 +4750,40 @@ a {
   overflow: visible;
 }
 @media screen and (min-width: 40.0625em) {
-  /* line 459, ../sass/the-women.scss */
+  /* line 467, ../sass/the-women.scss */
   .the-women .women-list ul li.woman.active .expand {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 52em) {
-  /* line 459, ../sass/the-women.scss */
+  /* line 467, ../sass/the-women.scss */
   .the-women .women-list ul li.woman.active .expand {
     margin-top: -1em;
   }
 }
 @media screen and (min-width: 64.0625em) {
-  /* line 459, ../sass/the-women.scss */
+  /* line 467, ../sass/the-women.scss */
   .the-women .women-list ul li.woman.active .expand {
     margin-top: -1em;
   }
 }
-/* line 475, ../sass/the-women.scss */
+/* line 483, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.active .expand div {
   padding: 1.75em 2.5em 1.875em;
 }
 @media screen and (min-width: 40.0625em) {
-  /* line 475, ../sass/the-women.scss */
+  /* line 483, ../sass/the-women.scss */
   .the-women .women-list ul li.woman.active .expand div {
     padding: 2.5em 3.75em;
   }
 }
 @media screen and (min-width: 64.0625em) {
-  /* line 475, ../sass/the-women.scss */
+  /* line 483, ../sass/the-women.scss */
   .the-women .women-list ul li.woman.active .expand div {
     padding: 2.125em 3.25em 2em;
   }
 }
-/* line 483, ../sass/the-women.scss */
+/* line 491, ../sass/the-women.scss */
 .the-women .women-list ul li.woman.active .expand div div {
   padding: 0;
 }
