@@ -1,28 +1,83 @@
 /*
-Error: Undefined variable: "$hairline".
-        on line 14 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss
+Error: Undefined mixin 'translate'.
+        on line 49 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss, in `translate'
+        from line 49 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss
 
-9:       margin: 0 auto;
-10:       text-align: left;
-11:       width: 100%;
-12:       position: relative;
-13:       padding: .5em;
-14:       border-bottom: 1px solid $hairline;
-15:       overflow: visible;
-16:       li{
-17:         position: relative;
-18:         margin: 0;
-19:         vertical-align: top;
+44:                 width: 100%;
+45:                 display: block;
+46:                 position: absolute;
+47:                 top: 50%;
+48:                 left: 50%;
+49:                 @include translate(-50%, -50%);
+50:               }
+51:               p.mentor-badge {
+52:                 position: absolute;
+53:                 top: 0;
+54:                 left: 0;
 
 Backtrace:
-/Users/jeffdaley/Code/ember-women/source/sass/the-women.scss:14
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/list_literal.rb:63:in `_perform'
+/Users/jeffdaley/Code/ember-women/source/sass/the-women.scss:49:in `translate'
+/Users/jeffdaley/Code/ember-women/source/sass/the-women.scss:49
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:348:in `visit_mixin'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
 org/jruby/RubyArray.java:2412:in `map'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/list_literal.rb:62:in `_perform'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+org/jruby/RubyArray.java:2412:in `map'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+org/jruby/RubyArray.java:2412:in `map'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+org/jruby/RubyArray.java:2412:in `map'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+org/jruby/RubyArray.java:2412:in `map'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
@@ -95,4 +150,4 @@ org/jruby/RubyProc.java:271:in `call'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$hairline\".\A         on line 14 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss\A \A 9:       margin: 0 auto;\A 10:       text-align: left;\A 11:       width: 100%;\A 12:       position: relative;\A 13:       padding: .5em;\A 14:       border-bottom: 1px solid $hairline;\A 15:       overflow: visible;\A 16:       li{\A 17:         position: relative;\A 18:         margin: 0;\A 19:         vertical-align: top;"; }
+  content: "Error: Undefined mixin 'translate'.\A         on line 49 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss, in `translate'\A         from line 49 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss\A \A 44:                 width: 100%;\A 45:                 display: block;\A 46:                 position: absolute;\A 47:                 top: 50%;\A 48:                 left: 50%;\A 49:                 @include translate(-50%, -50%);\A 50:               }\A 51:               p.mentor-badge {\A 52:                 position: absolute;\A 53:                 top: 0;\A 54:                 left: 0;"; }
