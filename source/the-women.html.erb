@@ -7,7 +7,7 @@ title: The Women | Ember Women Helping Women
     <div class="row">
       <div class="small-12 columns">
         <h1>Meet the women involved.</h1>
-        <p>We’ve organized a team with a range of experience to help you take the next steps. Whether you’re a conference veteran or just starting out, we're here.</p>
+        <p>Our members and mentors have a range of experiences and skills to help you, help each other, and to enhance your events. Get in touch to join or to invite one of our members to speak.</p>
       </div>
     </div>
   </section>
@@ -46,7 +46,7 @@ title: The Women | Ember Women Helping Women
                     <% end %>
                   </ul>
                   <% end %>
-                  <p class="contact-cta"><a href="https://tilde.wufoo.com/forms/ember-women-helping-women-contact-us/def/field1=Find%20a%20speaker&field118=<%= woman.name %>" class="button stroked">Inquire about speaking</a></p>
+                  <p class="contact-cta"><a href="https://tilde.wufoo.com/forms/ember-women-helping-women-contact-us/def/field1=Find%20a%20speaker&field118=<%= woman.name %>" class="button stroked">Invite <%= woman.name %> to speak</a></p>
                 </div>
                 <div class="small-12 medium-3 large-3 columns">
                   <% if woman.youtube present? %>
@@ -70,7 +70,6 @@ title: The Women | Ember Women Helping Women
       </div>
     </div>
   </section>
-
 
   <%= partial "signup-form" %>
   <%= partial "xsponsors-footer" %>
@@ -106,20 +105,15 @@ title: The Women | Ember Women Helping Women
   });
   </script>
 
-
-<script>
-$('p.bio').each(function() {
-    var word = $(this).html();
-    var index = word.indexOf(' ');
-    if(index == -1) {
-        index = word.length;
-    }
-    $(this).html('<span class="first-word">' + word.substring(0, index) + '</span>' + word.substring(index, word.length));
-});
-</script>
-
-
-
-
+  <script>
+  $('p.bio').each(function() {
+      var word = $(this).html();
+      var index = word.indexOf(' ');
+      if(index == -1) {
+          index = word.length;
+      }
+      $(this).html('<span class="first-word">' + word.substring(0, index) + '</span>' + word.substring(index, word.length));
+  });
+  </script>
 
 </section>
