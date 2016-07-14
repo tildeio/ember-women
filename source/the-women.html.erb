@@ -45,15 +45,10 @@ title: The Women | Ember Women Helping Women
                       <a href="//twitter.com/<%= woman.twitter %>" class="twitter"><%= woman.twitter %></a>
                     </li>
                     <% end %>
-                    <% if woman.link1 present? %>
+                    <% if woman.website present? %>
                     <li>
-                      <a href="<%= woman.link1 %>" class="external-link"><%= woman.link1_desc %></a>
+                      <a href="<%= woman.website %>" class="external-link"><%= woman.website_title %></a>
                     </li>
-                    <% if woman.link2 present? %>
-                    <li>
-                      <a href="<%= woman.link2 %>" class="external-link"><%= woman.link2_desc %></a>
-                    </li>
-                    <% end %>
                   </ul>
                   <% end %>
                   <p class="contact-cta"><a href="https://tilde.wufoo.com/forms/ember-women-helping-women-contact-us/def/field1=Find%20a%20speaker&field118=<%= woman.name %>" class="button stroked">Invite <%= woman.name %> to speak</a></p>
