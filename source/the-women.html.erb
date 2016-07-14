@@ -34,14 +34,24 @@ title: The Women | Ember Women Helping Women
                 <div class="small-12 medium-9 large-9 columns">
 
                   <p class="bio"><%= woman.bio %></p>
-                  <% if woman.link1 present? %>
                   <ul class="other-links">
+                    <% if woman.github present? %>
                     <li>
-                      <a href="<%= woman.link1 %>"><%= woman.link1_desc %></a>
+                      <a href="//github.com/<%= woman.github %>" class="github"><%= woman.github %></a>
+                    </li>
+                    <% end %>
+                    <% if woman.twitter present? %>
+                    <li>
+                      <a href="//twitter.com/<%= woman.twitter %>" class="twitter"><%= woman.twitter %></a>
+                    </li>
+                    <% end %>
+                    <% if woman.link1 present? %>
+                    <li>
+                      <a href="<%= woman.link1 %>" class="external-link"><%= woman.link1_desc %></a>
                     </li>
                     <% if woman.link2 present? %>
                     <li>
-                      <a href="<%= woman.link2 %>"><%= woman.link2_desc %></a>
+                      <a href="<%= woman.link2 %>" class="external-link"><%= woman.link2_desc %></a>
                     </li>
                     <% end %>
                   </ul>
@@ -88,14 +98,14 @@ title: The Women | Ember Women Helping Women
     });
   });
   </script>
-  <script> // Animate Scroll-To Links
+  <script> // Add hash to URL on click; Animate Scroll-To Links
   $(document).ready(function(){
     $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();
 
       var target = this.hash;
       var $target = $(target);
-      $('html, body').delay(60);
+      $('html, body').delay(100);
       $('html, body').stop().animate({
         'scrollTop': $target.offset().top - 60
       }, 260, function () {
@@ -105,15 +115,6 @@ title: The Women | Ember Women Helping Women
   });
   </script>
 
-  <script>
-  $('p.bio').each(function() {
-      var word = $(this).html();
-      var index = word.indexOf(' ');
-      if(index == -1) {
-          index = word.length;
-      }
-      $(this).html('<span class="first-word">' + word.substring(0, index) + '</span>' + word.substring(index, word.length));
-  });
-  </script>
+
 
 </section>

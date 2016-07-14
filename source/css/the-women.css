@@ -1,39 +1,28 @@
 /*
-Error: Undefined mixin 'translate'.
-        on line 49 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss, in `translate'
-        from line 49 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss
+Error: Undefined mixin 'transition'.
+        on line 23 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss, in `transition'
+        from line 23 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss
 
-44:                 width: 100%;
-45:                 display: block;
-46:                 position: absolute;
-47:                 top: 50%;
-48:                 left: 50%;
-49:                 @include translate(-50%, -50%);
-50:               }
-51:               p.mentor-badge {
-52:                 position: absolute;
-53:                 top: 0;
-54:                 left: 0;
+18:         vertical-align: top;
+19:         padding: 0 1%;
+20:         &.woman {
+21:           a {
+22:             div.woman-thumb {
+23:               @include transition(opacity 250ms);
+24:               display: block;
+25:               position: relative;
+26:               padding-bottom: 65%;
+27:               overflow: hidden;
+28:               &:after {
 
 Backtrace:
-/Users/jeffdaley/Code/ember-women/source/sass/the-women.scss:49:in `translate'
-/Users/jeffdaley/Code/ember-women/source/sass/the-women.scss:49
+/Users/jeffdaley/Code/ember-women/source/sass/the-women.scss:23:in `transition'
+/Users/jeffdaley/Code/ember-women/source/sass/the-women.scss:23
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:348:in `visit_mixin'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
-org/jruby/RubyArray.java:2412:in `map'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
 /Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
@@ -150,4 +139,4 @@ org/jruby/RubyProc.java:271:in `call'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'translate'.\A         on line 49 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss, in `translate'\A         from line 49 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss\A \A 44:                 width: 100%;\A 45:                 display: block;\A 46:                 position: absolute;\A 47:                 top: 50%;\A 48:                 left: 50%;\A 49:                 @include translate(-50%, -50%);\A 50:               }\A 51:               p.mentor-badge {\A 52:                 position: absolute;\A 53:                 top: 0;\A 54:                 left: 0;"; }
+  content: "Error: Undefined mixin 'transition'.\A         on line 23 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss, in `transition'\A         from line 23 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss\A \A 18:         vertical-align: top;\A 19:         padding: 0 1%;\A 20:         &.woman {\A 21:           a {\A 22:             div.woman-thumb {\A 23:               @include transition(opacity 250ms);\A 24:               display: block;\A 25:               position: relative;\A 26:               padding-bottom: 65%;\A 27:               overflow: hidden;\A 28:               &:after {"; }

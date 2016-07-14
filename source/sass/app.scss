@@ -57,6 +57,7 @@ body > section {
 .button {
   border-radius: 1000px;
   background-color: $blue;
+  @include transition(none);
   &.postfix {
     border-radius: 0;
     border-style: solid;
@@ -80,6 +81,17 @@ body > section {
     color: $blue;
     background: none;
     border: 1px solid $blue;
+    @include transition(none);
+    &:hover {
+      border-color: $dark-blue;
+      color: $dark-blue;
+      background: none;
+      @include transition(none);
+    }
+  }
+  &:hover {
+    background: $light-blue;
+    @include transition(none);
   }
 }
 
@@ -125,14 +137,14 @@ body > section {
             color: white;
             margin-left: .3125em;
             padding: .6em 1em;
-            transition: none;
+            @include transition(none);
             @media screen and (min-width: $medium){
               padding: .9em 1.5em;
               margin-left: .625em;
             }
             &:hover {
-              transition: none;
-              background-color: $dark-blue;
+              @include transition(none);
+              background-color: $light-blue;
             }
           }
         }
@@ -230,17 +242,6 @@ body > section {
         position: absolute;
         top: 2.75em;
         right: 0;
-      }
-    }
-    .stroked {
-      background: none;
-      border: 1px solid $blue;
-      color: $blue;
-      transition: none;
-      &:hover {
-        border-color: $dark-blue;
-        color: $dark-blue;
-        transition: none;
       }
     }
     p {

@@ -20,6 +20,7 @@
         &.woman {
           a {
             div.woman-thumb {
+              @include transition(opacity 250ms);
               display: block;
               position: relative;
               padding-bottom: 65%;
@@ -37,7 +38,7 @@
               }
               &:hover {
                 &:after {
-                  opacity: .05;
+                  opacity: .08;
                 }
               }
               img {
@@ -78,19 +79,23 @@
                 color: $gray;
                 margin: .4em 0 0;
                 display: block;
-                line-height: 1.3em;
+                line-height: 1.35em;
                 font-size: $font-xsmall;
               }
               &.location {
-                background: $drawer-bg;
-                padding: .2em .7em .1em;
-                @include border-radius(9999em);
                 font-size: $font-xxsmall;
                 line-height: 1.3em;
-                display: inline-block;
-                margin: .4em 0 0;
-
-                // text-transform: uppercase;
+                display: block;
+                margin: .6em 0 0;
+                &:before {
+                  @include at2x('../images/icon-map-pin', png, 100%);
+                  content: '';
+                  height: 1.181818182em; // 12px/11px
+                  width: .909090909em; // 10px/11px
+                  float: left;
+                  display: block;
+                  margin-right: .3em;
+                }
               }
             }
             min-height: 8em;
@@ -224,6 +229,10 @@
             @media screen and (min-width: $large){
               width: 426.0528409%; // Container width divided by image width
             }
+            & * {
+              opacity: 0;
+              @include transition(opacity 250ms);
+            }
             &:after {
               content: '';
               display: block;
@@ -237,10 +246,6 @@
             }
             div {
               div {
-                h2 {
-                  margin: 0;
-                  float: left;
-                }
                 p {
                   color: $gray;
                   clear: both;
@@ -255,11 +260,6 @@
                     }
                   }
                   &.bio {
-                    .first-word {
-                      font-weight: bold;
-                      color: $black;
-                      letter-spacing: -.03em;
-                    }
                     &:first-child {
                       margin-top: 0;
                     }
@@ -324,56 +324,44 @@
                     }
                   }
                 }
-                a {
-                  &.twitter {
-                    display: inline-block;
-                    @include at2x('../images/icon-twitter', png, 100%);
-                    background-size: 100%;
-                    opacity: .5;
-                    height: 1.5em;
-                    width: 1.5em;
-                    margin-left: .625em;
-                    position: relative;
-                    @media screen and (min-width: $small){
-                      top: -1px;
-                    }
-                    @media screen and (min-width: $medium){
-                      height: 1.5em;
-                      width: 1.5em;
-                    }
-                    @media screen and (min-width: $large){
-                      height: 1.75em;
-                      width: 1.75em;
-                      top: .125em;
-                    }
-                    &:hover {
-                      opacity: .8;
-                    }
-                  }
-                }
                 ul.other-links {
-                  margin: 0;
+                  margin: 0 0 1.5em 0;
                   padding: 0;
                   border: none;
                   li {
-                    display: block;
-                    width: 100%;
+                    display: inline-block;;
+                    margin-right: 1em;
                     padding: 0;
-                    &:before {
-                      content: '';
-                      display: inline-block;
-                      @include at2x('../images/icon-link', png, 100%);
-                      width: .8125em;
-                      height: .8125em;
-                      top: .1em;
-                      margin-right: .25em;
-                      position: relative;
-                    }
                     a {
                       color: $gray;
                       font-size: $font-xsmall;
                       &:hover {
                         color: $blue;
+                      }
+                      &:before {
+                        content: '';
+                        display: inline-block;
+                        width: 1em;
+                        height: 1em;
+                        top: .1em;
+                        margin-right: .5em;
+                        position: relative;
+                        background-repeat: no-repeat;
+                      }
+                      &.twitter {
+                        &:before {
+                          @include at2x('../images/icon-twitter', png, 100%);
+                        }
+                      }
+                      &.github {
+                        &:before {
+                          @include at2x('../images/icon-github', png, 100%);
+                        }
+                      }
+                      &.external-link {
+                        &:before {
+                          @include at2x('../images/icon-link', png, 100%);
+                        }
                       }
                     }
                   }
@@ -385,22 +373,23 @@
           &.inactive {
             a {
               & * {
+                @include transition(opacity 250ms);
                 opacity: .8;
                 @media screen and (min-width: $small-medium){
                   opacity: .5;
                 }
               }
               div.woman-thumb {
-                @include transition(opacity 500ms);
+                @include transition(opacity 250ms);
                 -webkit-backface-visibility: hidden;
                 img {
-                  @include transition(opacity 500ms);
+                  @include transition(opacity 250ms);
                   -webkit-backface-visibility: hidden;
                 }
               }
               div.basic-info {
                 opacity: .6;
-                @include transition(opacity 500ms);
+                @include transition(opacity 250ms);
                 -webkit-backface-visibility: hidden;
                 @media screen and (min-width: $small-medium){
                   opacity: .3;
@@ -421,16 +410,16 @@
               }
 
               div.woman-thumb {
-                @include transition(opacity 500ms);
+                @include transition(opacity 250ms);
                 -webkit-backface-visibility: hidden;
                 img {
-                  @include transition(opacity 500ms);
+                  @include transition(opacity 250ms);
                   -webkit-backface-visibility: hidden;
                 }
               }
               div.basic-info {
                 opacity: .5;
-                @include transition(opacity 500ms);
+                @include transition(opacity 250ms);
                 -webkit-backface-visibility: hidden;
               }
             }
@@ -439,6 +428,7 @@
             .woman-thumb{
               @include transform(scale(1.15));
               @include transform-origin(bottom center);
+              @include transition(opacity 250ms);
               -webkit-backface-visibility: hidden;
               z-index: 100;
               @media screen and (min-width: $large){
@@ -447,6 +437,9 @@
               img {
                 opacity: 1;
                 width: 100%;
+              }
+              &:after {
+                opacity: .08;
               }
             }
             &:nth-last-child(-n+2) {
@@ -470,6 +463,10 @@
               opacity: 1;
               margin-bottom: 5.5em;
               overflow: visible;
+              & * {
+                  opacity: 1;
+                  @include transition(opacity 250ms);
+              }
               @media screen and (min-width: $medium) {
                 margin-top: 0;
               }
