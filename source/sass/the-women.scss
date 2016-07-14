@@ -295,6 +295,7 @@
                     display: inline-block;
                     position: relative;
                     div {
+                      background: $black;
                       width: 100%;
                       position: relative;
                       display: inline-block;
@@ -311,12 +312,15 @@
                         margin-top: -1.875em; // Half the image height plus a little more to optically center it
                       }
                       &:hover {
+                        -webkit-backface-visibility: hidden;
                         img {
-                          opacity: 1;
+                          -webkit-backface-visibility: hidden;
+                          opacity: .9;
                         }
                       }
                       img {
-                        opacity: .75;
+                        -webkit-backface-visibility: hidden;
+                        opacity: .65;
                       }
                     }
                     figcaption {
@@ -341,9 +345,9 @@
                       &:before {
                         content: '';
                         display: inline-block;
-                        width: 1em;
-                        height: 1em;
-                        top: .1em;
+                        width: 1.545454545em;
+                        height: 1.545454545em;
+                        top: .3em;
                         margin-right: .5em;
                         position: relative;
                         background-repeat: no-repeat;
