@@ -5746,9 +5746,22 @@ body > section {
   margin-bottom: 2em;
 }
 
+/* line 53, ../sass/app.scss */
+code {
+  background: rgba(129, 123, 116, 0.5);
+  color: #EEEBEB;
+  padding: .1em .25em;
+  -webkit-border-radius: 0.125em;
+  -khtml-border-radius: 0.125em;
+  -moz-border-radius: 0.125em;
+  -ms-border-radius: 0.125em;
+  -o-border-radius: 0.125em;
+  border-radius: 0.125em;
+}
+
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 57, ../sass/app.scss */
+/* line 63, ../sass/app.scss */
 .button {
   border-radius: 1000px;
   background-color: #00ADC4;
@@ -5759,7 +5772,7 @@ body > section {
   -o-transition: none;
   transition: none;
 }
-/* line 61, ../sass/app.scss */
+/* line 67, ../sass/app.scss */
 .button.postfix {
   border-radius: 0;
   border-style: solid;
@@ -5779,7 +5792,7 @@ body > section {
   z-index: 2;
   border-color: #00ADC4;
 }
-/* line 80, ../sass/app.scss */
+/* line 86, ../sass/app.scss */
 .button.stroked {
   color: #00ADC4;
   background: none;
@@ -5791,7 +5804,7 @@ body > section {
   -o-transition: none;
   transition: none;
 }
-/* line 85, ../sass/app.scss */
+/* line 91, ../sass/app.scss */
 .button.stroked:hover {
   border-color: #0790A2;
   color: #0790A2;
@@ -5803,7 +5816,7 @@ body > section {
   -o-transition: none;
   transition: none;
 }
-/* line 92, ../sass/app.scss */
+/* line 98, ../sass/app.scss */
 .button:hover {
   background: #0FBAD0;
   -webkit-transition: none;
@@ -5816,61 +5829,61 @@ body > section {
 
 /* Header and Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 102, ../sass/app.scss */
+/* line 108, ../sass/app.scss */
 .page-header, .page-footer {
   position: relative;
   padding-top: 1.25em;
   padding-bottom: 3.125em;
 }
 @media screen and (min-width: 40.0625em) {
-  /* line 102, ../sass/app.scss */
+  /* line 108, ../sass/app.scss */
   .page-header, .page-footer {
     padding-top: 1.875em;
   }
 }
-/* line 109, ../sass/app.scss */
+/* line 115, ../sass/app.scss */
 .page-header .logo, .page-footer .logo {
   text-align: center;
 }
 @media screen and (min-width: 40.0625em) {
-  /* line 109, ../sass/app.scss */
+  /* line 115, ../sass/app.scss */
   .page-header .logo, .page-footer .logo {
     text-align: left;
   }
 }
-/* line 115, ../sass/app.scss */
+/* line 121, ../sass/app.scss */
 .page-header .main-menu, .page-footer .main-menu {
   position: relative;
   top: .4375em;
 }
-/* line 118, ../sass/app.scss */
+/* line 124, ../sass/app.scss */
 .page-header .main-menu ul.menu, .page-footer .main-menu ul.menu {
   text-align: center;
   font-size: 0.8125em;
   margin-top: .9375em;
 }
 @media screen and (min-width: 40.0625em) {
-  /* line 118, ../sass/app.scss */
+  /* line 124, ../sass/app.scss */
   .page-header .main-menu ul.menu, .page-footer .main-menu ul.menu {
     float: right;
     margin-top: 0;
   }
 }
-/* line 126, ../sass/app.scss */
+/* line 132, ../sass/app.scss */
 .page-header .main-menu ul.menu li, .page-footer .main-menu ul.menu li {
   display: inline-block;
 }
-/* line 128, ../sass/app.scss */
+/* line 134, ../sass/app.scss */
 .page-header .main-menu ul.menu li a, .page-footer .main-menu ul.menu li a {
   padding: .9em .5em;
 }
 @media screen and (min-width: 40.0625em) {
-  /* line 128, ../sass/app.scss */
+  /* line 134, ../sass/app.scss */
   .page-header .main-menu ul.menu li a, .page-footer .main-menu ul.menu li a {
     padding: .9em 1em;
   }
 }
-/* line 133, ../sass/app.scss */
+/* line 139, ../sass/app.scss */
 .page-header .main-menu ul.menu li a.button, .page-footer .main-menu ul.menu li a.button {
   font-size: 1em;
   padding-left: 1.5em;
@@ -5886,13 +5899,13 @@ body > section {
   transition: none;
 }
 @media screen and (min-width: 40.0625em) {
-  /* line 133, ../sass/app.scss */
+  /* line 139, ../sass/app.scss */
   .page-header .main-menu ul.menu li a.button, .page-footer .main-menu ul.menu li a.button {
     padding: .9em 1.5em;
     margin-left: .625em;
   }
 }
-/* line 145, ../sass/app.scss */
+/* line 151, ../sass/app.scss */
 .page-header .main-menu ul.menu li a.button:hover, .page-footer .main-menu ul.menu li a.button:hover {
   -webkit-transition: none;
   -khtml-transition: none;
@@ -5902,7 +5915,7 @@ body > section {
   transition: none;
   background-color: #0FBAD0;
 }
-/* line 152, ../sass/app.scss */
+/* line 158, ../sass/app.scss */
 .page-header .main-menu ul.menu li.active > a, .page-footer .main-menu ul.menu li.active > a {
   background: none;
   color: #120C07;
@@ -5910,16 +5923,16 @@ body > section {
   letter-spacing: -.05em;
 }
 
-/* line 164, ../sass/app.scss */
+/* line 170, ../sass/app.scss */
 .page-header a {
   color: #817B74;
 }
-/* line 166, ../sass/app.scss */
+/* line 172, ../sass/app.scss */
 .page-header a:hover {
   color: #120C07;
 }
 
-/* line 171, ../sass/app.scss */
+/* line 177, ../sass/app.scss */
 .the-program #the-program,
 .the-women #the-women {
   font-weight: bold;
@@ -5927,47 +5940,47 @@ body > section {
   letter-spacing: -.03em;
 }
 
-/* line 178, ../sass/app.scss */
+/* line 184, ../sass/app.scss */
 .page-footer {
   background: #120C07;
 }
-/* line 180, ../sass/app.scss */
+/* line 186, ../sass/app.scss */
 .page-footer a {
   color: #817B74;
 }
-/* line 182, ../sass/app.scss */
+/* line 188, ../sass/app.scss */
 .page-footer a:hover {
   color: white;
 }
 
-/* line 187, ../sass/app.scss */
+/* line 193, ../sass/app.scss */
 .border-wrapper {
   border-bottom: 1px solid #C8C3C3;
   padding-bottom: 5em;
 }
 
-/* line 193, ../sass/app.scss */
+/* line 199, ../sass/app.scss */
 .page-intro p {
   margin-top: .625em;
   color: #817B74;
   font-size: 0.9375em;
 }
 @media screen and (min-width: 23.75em) {
-  /* line 193, ../sass/app.scss */
+  /* line 199, ../sass/app.scss */
   .page-intro p {
     font-size: 1.125em;
     padding-right: 0;
   }
 }
 @media screen and (min-width: 40.0625em) {
-  /* line 193, ../sass/app.scss */
+  /* line 199, ../sass/app.scss */
   .page-intro p {
     font-size: 1.3125em;
     padding-right: 3.75em;
   }
 }
 @media screen and (min-width: 64.0625em) {
-  /* line 193, ../sass/app.scss */
+  /* line 199, ../sass/app.scss */
   .page-intro p {
     font-size: 1.625em;
   }
@@ -5975,22 +5988,22 @@ body > section {
 
 /* Sponsors Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 215, ../sass/app.scss */
+/* line 221, ../sass/app.scss */
 .xsponsors-footer {
   text-align: center;
 }
 @media screen and (min-width: 64.0625em) {
-  /* line 215, ../sass/app.scss */
+  /* line 221, ../sass/app.scss */
   .xsponsors-footer {
     text-align: left;
   }
 }
-/* line 220, ../sass/app.scss */
+/* line 226, ../sass/app.scss */
 .xsponsors-footer div {
   position: relative;
   padding: 1.875em 0;
 }
-/* line 223, ../sass/app.scss */
+/* line 229, ../sass/app.scss */
 .xsponsors-footer div img {
   display: block;
   margin-left: auto;
@@ -5999,14 +6012,14 @@ body > section {
   max-width: 7em;
 }
 @media screen and (min-width: 40.0625em) {
-  /* line 223, ../sass/app.scss */
+  /* line 229, ../sass/app.scss */
   .xsponsors-footer div img {
     display: inline-block;
     margin-top: 0;
     margin-left: 5px;
   }
 }
-/* line 235, ../sass/app.scss */
+/* line 241, ../sass/app.scss */
 .xsponsors-footer div .button {
   position: relative;
   font-size: 0.8125em;
@@ -6015,19 +6028,19 @@ body > section {
   margin-top: .625em;
 }
 @media screen and (min-width: 64.0625em) {
-  /* line 235, ../sass/app.scss */
+  /* line 241, ../sass/app.scss */
   .xsponsors-footer div .button {
     position: absolute;
     top: 2.75em;
     right: 0;
   }
 }
-/* line 247, ../sass/app.scss */
+/* line 253, ../sass/app.scss */
 .xsponsors-footer div p {
   font-size: 0.9375em;
   color: #817B74;
 }
-/* line 250, ../sass/app.scss */
+/* line 256, ../sass/app.scss */
 .xsponsors-footer div p span {
   color: #120C07;
   font-weight: bold;
@@ -6035,17 +6048,17 @@ body > section {
 
 /* Email CTA
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 262, ../sass/app.scss */
+/* line 268, ../sass/app.scss */
 .email-signup {
   text-align: center;
   padding-top: 3em;
 }
-/* line 265, ../sass/app.scss */
+/* line 271, ../sass/app.scss */
 .email-signup .border-wrapper {
   border-bottom: 1px solid #C8C3C3;
   padding-bottom: 5em;
 }
-/* line 269, ../sass/app.scss */
+/* line 275, ../sass/app.scss */
 .email-signup input {
   width: 100%;
   height: 100%;
@@ -6054,15 +6067,15 @@ body > section {
   padding: 0.5em 1em;
   height: 3.125em;
 }
-/* line 277, ../sass/app.scss */
+/* line 283, ../sass/app.scss */
 .email-signup p {
   font-size: 0.8125em;
 }
-/* line 280, ../sass/app.scss */
+/* line 286, ../sass/app.scss */
 .email-signup h2 {
   margin-bottom: 0;
 }
-/* line 283, ../sass/app.scss */
+/* line 289, ../sass/app.scss */
 .email-signup #mc_embed_signup {
   margin-top: 1.5em;
 }

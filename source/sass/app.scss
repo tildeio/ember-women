@@ -50,6 +50,12 @@ body > section {
   padding-bottom: 2em;
   margin-bottom: 2em;
 }
+code {
+  background: $gray50;
+  color: $page-bg;
+  padding: .1em .25em;
+  @include border-radius(.125em);
+}
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
