@@ -54,17 +54,60 @@ title: The Women | Ember Women Helping Women
                   <p class="contact-cta"><a href="https://tilde.wufoo.com/forms/ember-women-helping-women-contact-us/def/field1=Find%20a%20speaker&field118=<%= woman.name %>" class="button stroked">Invite <%= woman.name %> to speak</a></p>
                 </div>
                 <div class="small-12 medium-3 large-3 columns">
-                  <% if woman.youtube present? %>
-                  <a href="https://www.youtube.com/watch?v=<%= woman.youtube %>" class="video-thumb">
+                  <% if woman.youtube2 present? %>
+                  <ul>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=<%= woman.youtube1 %>" class="video-thumb">
+                        <figure>
+                          <div>
+                            <img src="http://i.ytimg.com/vi/<%= woman.youtube1 %>/hqdefault.jpg" alt="Watch <%= woman.youtube1_title %>r">
+                          </div>
+                          <figcaption>
+                            <%= woman.youtube1_title %>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=<%= woman.youtube2 %>" class="video-thumb">
+                        <figure>
+                          <div>
+                            <img src="http://i.ytimg.com/vi/<%= woman.youtube2 %>/hqdefault.jpg" alt="Watch <%= woman.youtube2_title %>r">
+                          </div>
+                          <figcaption>
+                            <%= woman.youtube2_title %>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </li>
+                    <% if woman.youtube3 present? %>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=<%= woman.youtube3 %>" class="video-thumb">
+                        <figure>
+                          <div>
+                            <img src="http://i.ytimg.com/vi/<%= woman.youtube3 %>/hqdefault.jpg" alt="Watch <%= woman.youtube3_title %>r">
+                          </div>
+                          <figcaption>
+                            <%= woman.youtube3_title %>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </li>
+                    <% end %>
+                  </ul>
+                  <% else %>
+                  <% if woman.youtube1 present? %>
+                  <a href="https://www.youtube.com/watch?v=<%= woman.youtube1 %>" class="video-thumb">
                     <figure>
                       <div>
-                        <img src="http://i.ytimg.com/vi/<%= woman.youtube %>/hqdefault.jpg" alt="Watch <%= woman.youtube_title %>r">
+                        <img src="http://i.ytimg.com/vi/<%= woman.youtube1 %>/hqdefault.jpg" alt="Watch <%= woman.youtube1_title %>r">
                       </div>
                       <figcaption>
-                        <%= woman.youtube_title %>
+                        <%= woman.youtube1_title %>
                       </figcaption>
                     </figure>
                   </a>
+                  <% end %>
                   <% end %>
                 </div>
               </div>

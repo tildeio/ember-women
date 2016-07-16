@@ -6,8 +6,8 @@
   twitter: "wifelette"
   mentor: true
   anchor: "leah-silber"
-  youtube: "zD26LvYbfms"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "zD26LvYbfms"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://www.github.com/wifelette"
   website_title: "Leah on GitHub"
 
@@ -30,8 +30,8 @@
   twitter: "beardigsit"
   mentor: true
   anchor: "bear-douglas"
-  youtube: "zD26LvYbfms"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "zD26LvYbfms"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://google.com"
   website_title: "Bear's Website"
 
@@ -43,8 +43,8 @@
   twitter: "katiegengler"
   mentor: true
   anchor: "katie-gengler"
-  youtube: "_FZw_cokIhc"
-  youtube_title: "The Ember Addon Community"
+  youtube1: "_FZw_cokIhc"
+  youtube1_title: "The Ember Addon Community"
   website: "https://github.com/kategengler"
   website_title: "Katie on GitHub"
 
@@ -67,8 +67,8 @@
   twitter: "sugarpirate_"
   mentor: true
   anchor: "lauren-tan"
-  youtube: "TlU0m18Pr-Y"
-  youtube_title: "Ambitious UX for Ambitious Apps"
+  youtube1: "TlU0m18Pr-Y"
+  youtube1_title: "Ambitious UX for Ambitious Apps"
   website: "http://google.com"
   website_title: "DS_Store.com"
 
@@ -80,8 +80,8 @@
   twitter: "wifelette"
   mentor: true
   anchor: "a"
-  youtube: "ktZLpjCanvg"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "ktZLpjCanvg"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://tilde.io"
   website_title: "Tilde Inc."
 
@@ -92,8 +92,8 @@
   github: "wifelette"
   twitter: "wifelette"
   anchor: "b"
-  youtube: "MlhAkNWC1qo"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "MlhAkNWC1qo"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://tilde.io"
   website_title: "Tilde Inc."
 
@@ -113,8 +113,8 @@
   bio: "Yehuda is a member of the Ember.js, Ruby on Rails and jQuery Core Teams; his 9-to-5 home is at the startup he founded, <a href='http://www.tilde.io'>Tilde Inc</a>, where he works on <a href='http://www.skylight.io'>Skylight</a>, the smart profiler for Rails. Yehuda spends most of his time hacking on open source—his main projects, along with others, like Thor, Handlebars and Janus—and traveling the world doing open source evangelism work."
   github: "wifelette"
   anchor: "d"
-  youtube: "lBfVxBj61z0"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "lBfVxBj61z0"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://google.com"
   website_title: "Bear's Website"
 
@@ -124,8 +124,8 @@
   bio: "Yehuda is a member of the Ember.js, Ruby on Rails and jQuery Core Teams; his 9-to-5 home is at the startup he founded, <a href='http://www.tilde.io'>Tilde Inc</a>, where he works on <a href='http://www.skylight.io'>Skylight</a>, the smart profiler for Rails. Yehuda spends most of his time hacking on open source—his main projects, along with others, like Thor, Handlebars and Janus—and traveling the world doing open source evangelism work."
   twitter: "katiegengler"
   anchor: "e"
-  youtube: "of1zVJqZ-Cc"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "of1zVJqZ-Cc"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://google.com"
   website_title: "Katie on Githup"
 
@@ -145,10 +145,14 @@
   bio: "Yehuda is a member of the Ember.js, Ruby on Rails and jQuery Core Teams; his 9-to-5 home is at the startup he founded, <a href='http://www.tilde.io'>Tilde Inc</a>, where he works on <a href='http://www.skylight.io'>Skylight</a>, the smart profiler for Rails. Yehuda spends most of his time hacking on open source—his main projects, along with others, like Thor, Handlebars and Janus—and traveling the world doing open source evangelism work."
   github: "wifelette"
   anchor: "g"
-  youtube: "NGmLLLEHCmI"
-  youtube_title: "Building an OSS-Centric Company"
   website: "http://google.com"
   website_title: "DS_Store.com"
+  youtube1: "NGmLLLEHCmI"
+  youtube1_title: "Building an OSS-Centric Company"
+  youtube2: "of1zVJqZ-Cc"
+  youtube2_title: "The Ember Addon Community"
+  youtube3: "54oW_6kUIGw"
+  youtube3_title: "Ambitious UX for Ambitious Apps"
 
 - name: "Jo Pak"
   job_title: "Senior Product Manager at Drunk Club"
@@ -157,8 +161,8 @@
   github: "wifelette"
   twitter: "wifelette"
   anchor: "h"
-  youtube: "9BoFeIYweno"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "9BoFeIYweno"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://tilde.io"
   website_title: "Tilde Inc."
 
@@ -177,8 +181,8 @@
   bio: "Yehuda is a member of the Ember.js, Ruby on Rails and jQuery Core Teams; his 9-to-5 home is at the startup he founded, <a href='http://www.tilde.io'>Tilde Inc</a>, where he works on <a href='http://www.skylight.io'>Skylight</a>, the smart profiler for Rails. Yehuda spends most of his time hacking on open source—his main projects, along with others, like Thor, Handlebars and Janus—and traveling the world doing open source evangelism work."
   twitter: "wifelette"
   anchor: "j"
-  youtube: "sQfZEb1bMYU"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "sQfZEb1bMYU"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://tilde.io"
   website_title: "Tilde Inc."
 
@@ -197,8 +201,8 @@
   bio: "Yehuda is a member of the Ember.js, Ruby on Rails and jQuery Core Teams; his 9-to-5 home is at the startup he founded, <a href='http://www.tilde.io'>Tilde Inc</a>, where he works on <a href='http://www.skylight.io'>Skylight</a>, the smart profiler for Rails. Yehuda spends most of his time hacking on open source—his main projects, along with others, like Thor, Handlebars and Janus—and traveling the world doing open source evangelism work."
   github: "wifelette"
   anchor: "l"
-  youtube: "54oW_6kUIGw"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "54oW_6kUIGw"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://google.com"
   website_title: "Bear's Website"
 
@@ -209,8 +213,8 @@
   github: "wifelette"
   twitter: "katiegengler"
   anchor: "m"
-  youtube: "Q3HQ7fyd4eQ"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "Q3HQ7fyd4eQ"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://google.com"
   website_title: "Katie on Githup"
 
@@ -231,8 +235,8 @@
   github: "wifelette"
   twitter: "sugarpirate_"
   anchor: "o"
-  youtube: "HaxOWnpi6yA"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "HaxOWnpi6yA"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://google.com"
   website_title: "DS_Store.com"
 
@@ -243,8 +247,8 @@
   github: "wifelette"
   twitter: "wifelette"
   anchor: "p"
-  youtube: "yODORwGmHqo"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "yODORwGmHqo"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://tilde.io"
   website_title: "Tilde Inc."
 
@@ -265,8 +269,8 @@
   github: "wifelette"
   twitter: "wifelette"
   anchor: "r"
-  youtube: "VtZbWnIALeE"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "VtZbWnIALeE"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://tilde.io"
   website_title: "Tilde Inc."
 
@@ -277,8 +281,8 @@
   github: "wifelette"
   twitter: "sugarpirate_"
   anchor: "s"
-  youtube: "exfbmY7mg8s"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "exfbmY7mg8s"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://google.com"
   website_title: "DS_Store.com"
 
@@ -289,8 +293,8 @@
   github: "wifelette"
   twitter: "wifelette"
   anchor: "t"
-  youtube: "2YVHC-2vkMQ"
-  youtube_title: "Building an OSS-Centric Company"
+  youtube1: "2YVHC-2vkMQ"
+  youtube1_title: "Building an OSS-Centric Company"
   website: "http://tilde.io"
   website_title: "Tilde Inc."
 

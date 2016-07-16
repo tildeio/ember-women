@@ -246,6 +246,7 @@
             }
             div {
               div {
+
                 p {
                   color: $gray;
                   clear: both;
@@ -325,6 +326,10 @@
                     }
                     figcaption {
                       margin-top: .625em;
+                      line-height: 1.35em;
+                      &:hover {
+                        color: $blue;
+                      }
                     }
                   }
                 }
@@ -335,6 +340,7 @@
                   li {
                     display: inline-block;;
                     margin-right: 1em;
+                    width: auto;
                     padding: 0;
                     a {
                       color: $gray;
@@ -365,6 +371,83 @@
                       &.external-link {
                         &:before {
                           @include at2x('../images/icon-link', png, 100%);
+                        }
+                      }
+                    }
+                  }
+                }
+                ul {
+                  padding: 0;
+                  li {
+                    margin-bottom: .75em;
+                    width: 100%;
+                    @media screen and (min-width: $small){
+                      width: 33.3333333333%;
+                      float: left;
+                    }
+                    @media screen and (min-width: $medium){
+                      width: 100%;
+                      float: none;
+                    }
+                    a.video-thumb {
+                      figure {
+                        width: 100%;
+                        div {
+                          float: left;
+                          width: 30%;
+                          @media screen and (min-width: $small){
+                          width: 100%;
+                          float: none;
+                        }
+                          @media screen and (min-width: $medium){
+                            width: 30%;
+                            float: left;
+                          }
+
+                          &:after {
+                            content: '';
+                            @include at2x('../images/icon-play', png, 100%);
+                            display: block;
+                            width: 2em;
+                            height: 2em;
+                            margin-left: -1em; // Half the image height
+                            margin-top: -1em; // Half the image height plus a little more to optically center it
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            @media screen and (min-width: $medium){
+                              width: 1.5em;
+                              height: 1.5em;
+                              margin-left: -.75em; // Half the image height
+                              margin-top: -.75em; // Half the image height plus a little more to optically center it
+                            }
+                          }
+                        }
+                        figcaption {
+                          width: 70%;
+                          float: left;
+                          font-size: $font-xsmall;
+                          padding-left: .75em;
+                          @media screen and (min-width: $small){
+                            font-size: $font-xxsmall;
+                            width: 100%;
+                            padding-left: 0;
+                          }
+                          @media screen and (min-width: $small-medium){
+                            font-size: $font-xsmall;
+                          }
+                          @media screen and (min-width: $medium){
+                            padding-left: .75em;
+                            width: 70%;
+                            font-size: $font-xxsmall;
+                            margin-top: 0;
+
+                          }
+                          @media screen and (min-width: $medium-large){
+                            padding-left: .75em;
+                            width: 70%;
+                            font-size: $font-xsmall;
+                          }
                         }
                       }
                     }
@@ -468,8 +551,8 @@
               margin-bottom: 5.5em;
               overflow: visible;
               & * {
-                  opacity: 1;
-                  @include transition(opacity 250ms);
+                opacity: 1;
+                @include transition(opacity 250ms);
               }
               @media screen and (min-width: $medium) {
                 margin-top: 0;
