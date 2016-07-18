@@ -15,7 +15,7 @@ title: The Women | Ember Women Helping Women
     <div class="row collapse">
       <div class="small-12 columns">
         <ul class="small-up-2 medium-up-3 large-up-4">
-          <% data.the_women.shuffle(random: Random.new(1)).each do |woman| %>
+          <% data.the_women.shuffle.each do |woman| %>
           <li class="woman column" id="<%= woman.anchor %>">
             <a href="#<%= woman.anchor %>">
               <div class="woman-thumb">
