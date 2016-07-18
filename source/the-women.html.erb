@@ -37,17 +37,17 @@ title: The Women | Ember Women Helping Women
                   <ul class="other-links">
                     <% if woman.github present? %>
                     <li>
-                      <a href="//github.com/<%= woman.github %>" class="github"><%= woman.github %></a>
+                      <a href="//github.com/<%= woman.github %>" class="github" target="_blank"><%= woman.github %></a>
                     </li>
                     <% end %>
                     <% if woman.twitter present? %>
                     <li>
-                      <a href="//twitter.com/<%= woman.twitter %>" class="twitter"><%= woman.twitter %></a>
+                      <a href="//twitter.com/<%= woman.twitter %>" class="twitter" target="_blank"><%= woman.twitter %></a>
                     </li>
                     <% end %>
                     <% if woman.website present? %>
                     <li>
-                      <a href="<%= woman.website %>" class="external-link"><%= woman.website_title %></a>
+                      <a href="<%= woman.website %>" class="external-link" target="_blank"><%= woman.website_title %></a>
                     </li>
                   </ul>
                   <% end %>
