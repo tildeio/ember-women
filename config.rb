@@ -66,9 +66,9 @@ set :fonts_dir,  'fonts'
 
 set :build_dir, 'tmp'
 
-# activate :minify_html
 
 configure :build do
   activate :minify_css
+  activate :minify_html
   activate :minify_javascript
 end

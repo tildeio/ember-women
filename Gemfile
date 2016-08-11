@@ -19,6 +19,9 @@ gem 'neat'
 gem 'font-awesome-middleman'
 gem 'jquery-middleman'
 
+gem 'image_optim'
+gem 'middleman-imageoptim'
+
 gem 'rack-contrib'
 gem 'middleman-minify-html'
 gem 'middleman-deploy'
