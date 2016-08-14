@@ -19,35 +19,28 @@
         padding: 0 1%;
         &.woman {
           a {
+
             div.woman-thumb {
-              @include transition(opacity 250ms);
+              @include transition(all 150ms);
               display: block;
               position: relative;
               padding-bottom: 65%;
               overflow: hidden;
-              &:after {
-                content: '';
-                height: 100%;
-                width: 100%;
-                display: block;
-                background: orange;
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: .2;
-              }
-              &:hover {
-                &:after {
-                  opacity: .08;
-                }
-              }
+              background: orange;
+              background-clip: content-box;
               img {
                 width: 100%;
                 display: block;
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                @include translate(-50%, -50%);
+
+                @include translate3d(-50%, -50%, 0);
+                opacity: .8;
+           }
+              &:hover {
+                img {
+                }
               }
               p.mentor-badge {
                 position: absolute;
@@ -231,7 +224,7 @@
             }
             & * {
               opacity: 0;
-              @include transition(opacity 250ms);
+              @include transition(opacity 150ms);
             }
             &:after {
               content: '';
@@ -313,14 +306,14 @@
                         margin-top: -1.875em; // Half the image height plus a little more to optically center it
                       }
                       &:hover {
-                        -webkit-backface-visibility: hidden;
+
                         img {
-                          -webkit-backface-visibility: hidden;
+
                           opacity: .9;
                         }
                       }
                       img {
-                        -webkit-backface-visibility: hidden;
+
                         opacity: .65;
                       }
                     }
@@ -459,25 +452,29 @@
 
           &.inactive {
             a {
+
               & * {
-                @include transition(opacity 250ms);
+
+                @include transition(opacity 150ms);
                 opacity: .8;
                 @media screen and (min-width: $small-medium){
                   opacity: .5;
                 }
               }
               div.woman-thumb {
-                @include transition(opacity 250ms);
-                -webkit-backface-visibility: hidden;
+
+
+
+                @include transition(opacity 150ms);
+
                 img {
-                  @include transition(opacity 250ms);
-                  -webkit-backface-visibility: hidden;
+
                 }
               }
               div.basic-info {
                 opacity: .6;
-                @include transition(opacity 250ms);
-                -webkit-backface-visibility: hidden;
+                @include transition(opacity 150ms);
+
                 @media screen and (min-width: $small-medium){
                   opacity: .3;
                 }
@@ -486,46 +483,61 @@
           }
           &.semi-active {
             &:hover * {
+
+
               opacity: 1;
               div.basic-info {
                 opacity: 1;
+
+
               }
             }
             a {
+
               & * {
+
+
                 opacity: .8;
               }
 
               div.woman-thumb {
-                @include transition(opacity 250ms);
-                -webkit-backface-visibility: hidden;
+
+
+
+                @include transition(opacity 150ms);
                 img {
-                  @include transition(opacity 250ms);
-                  -webkit-backface-visibility: hidden;
                 }
               }
               div.basic-info {
                 opacity: .5;
-                @include transition(opacity 250ms);
-                -webkit-backface-visibility: hidden;
               }
             }
           }
           &.active {
-            .woman-thumb{
+
+
+            div.woman-thumb {
+
+
+
               @include transform(scale(1.15));
               @include transform-origin(bottom center);
-              @include transition(opacity 250ms);
-              -webkit-backface-visibility: hidden;
+              @include transition(opacity 150ms);
+
               z-index: 100;
               @media screen and (min-width: $large){
                 @include transform(scale(1.25));
               }
               img {
                 opacity: 1;
+
+
+
                 width: 100%;
               }
               &:after {
+
+
                 opacity: .08;
               }
             }
@@ -552,7 +564,7 @@
               overflow: visible;
               & * {
                 opacity: 1;
-                @include transition(opacity 250ms);
+                @include transition(opacity 150ms);
               }
               @media screen and (min-width: $medium) {
                 margin-top: 0;

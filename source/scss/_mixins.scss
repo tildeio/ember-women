@@ -58,6 +58,9 @@
 @mixin translate ($x, $y) {
    @include transform(translate($x, $y));
 }
+@mixin translate3d ($x, $y, $z) {
+   @include transform(translate3d($x, $y, $z));
+}
 
 
 

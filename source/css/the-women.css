@@ -142,5 +142,6 @@ body:before {
   content: "Error: Undefined mixin 'transition'.\A         on line 23 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss, in `transition'\A         from line 23 of /Users/jeffdaley/Code/ember-women/source/sass/the-women.scss\A \A 18:         vertical-align: top;\A 19:         padding: 0 1%;\A 20:         &.woman {\A 21:           a {\A 22:             div.woman-thumb {\A 23:               @include transition(opacity 250ms);\A 24:               display: block;\A 25:               position: relative;\A 26:               padding-bottom: 65%;\A 27:               overflow: hidden;\A 28:               &:after {"; }
 
 /*# sourceMappingURL=the-women.css.map */
+/*# sourceMappingURL=the-women.css.map */
 
 /*# sourceMappingURL=the-women.css.map */
