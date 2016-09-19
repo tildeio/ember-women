@@ -38,7 +38,7 @@
 - name: "Brenna O'Brien"
   job_title: "Front-end engineer at TED Talks"
   location: "Toronto, Canada"
-  bio: "Brenna is a front-end engineer at TED, where she works on internal tools and open source addons built with Ember.js. She is also an organizer of <a href='http://nodeschool.io/toronto/'>NodeSchool Toronto]</a>, an expert in SVG and D3.js, and an advocate for healthy developer communities."
+  bio: "Brenna is a front-end engineer at TED, where she works on internal tools and open source addons built with Ember.js. She is also an organizer of <a href='http://nodeschool.io/toronto/'>NodeSchool Toronto</a>, an expert in SVG and D3.js, and an advocate for healthy developer communities."
   github: "brenna"
   twitter: "brnnbrn"
   mentor: false
