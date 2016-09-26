@@ -85,9 +85,9 @@
   youtube2_title: "Ember Testing with Chemistry Dog"
 
 - name: "Lauren Tan"
-  job_title: "Senior Developer at Netflix"
-  location: "Mountain View, CA"
-  bio: "Lauren is a Senior Developer at Netflix. She gave her first ever conference talk at EmberConf 2015, and loved it so much she decided to speak again. Lauren frequently writes about Ember.js at her blog on medium, enjoys bubble tea, and has a little puppy named Zelda."
+  job_title: "Senior Software Engineer at Netflix"
+  location: "San Francisco, CA"
+  bio: "Lauren is a Senior Software Engineer at Netflix. She gave her first ever conference talk at EmberConf 2015, and loved it so much she decided to speak again. Lauren frequently writes about Ember.js at her blog on medium, enjoys bubble tea, and has a little puppy named Zelda."
   github: "poteto"
   twitter: "sugarpirate_"
   mentor: true
