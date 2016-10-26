@@ -99,6 +99,15 @@
   youtube3: "lP9ap-AKBAM"
   youtube3_title: "Idiomatic Ember"
 
+- name: "Madeline Rae Horowitz"
+  job_title: "UI Engineer at Addepar"
+  location: "New York, NY"
+  bio: "Madeline is a UI Engineer at Addepar, where she works on maintaining a consistent visual system across the application using Ember.js and SASS. She also maintains <a href='https://github.com/raemadeline/css-for-engineers'>CSS For Engineers</a>, a blog to teach her more backend-focused peers the joys of writing CSS."
+  github: "raemadeline"
+  mentor: false
+  anchor: "madeline-rae-horowitz"
+  website: "http://raemadeline.com"
+  website_title: "Madeline's Website"
 
 # ## BLANK TEMPLATE TO COPY
 #
