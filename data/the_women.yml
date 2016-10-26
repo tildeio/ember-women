@@ -109,6 +109,17 @@
   website: "http://raemadeline.com"
   website_title: "Madeline's Website"
 
+  - name: "Laura B. Kinson"
+  job_title: "Web Developer at Fender"
+  location: "Los Angeles, CA"
+  bio: "Laura Kinson is a <a href='http://www.fender.com/'>software engineer and part-time ukulele player by day</a>. She <a href='http://onedowndog.com/'>teaches yoga on the weekends</a> and is passionate about to-do lists, Yelp, and perfecting the poached egg."
+  github: "lbkinson"
+  twitter: "lbkinson"
+  mentor: false
+  anchor: "laura-kinson"
+  website: "http://lbkinson.com/"
+  website_title: "Laura's Website"
+
 # ## BLANK TEMPLATE TO COPY
 #
 # - name: ""
