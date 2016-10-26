@@ -109,7 +109,7 @@
   website: "http://raemadeline.com"
   website_title: "Madeline's Website"
 
-  - name: "Laura B. Kinson"
+- name: "Laura B. Kinson"
   job_title: "Web Developer at Fender"
   location: "Los Angeles, CA"
   bio: "Laura Kinson is a <a href='http://www.fender.com/'>software engineer and part-time ukulele player by day</a>. She <a href='http://onedowndog.com/'>teaches yoga on the weekends</a> and is passionate about to-do lists, Yelp, and perfecting the poached egg."
@@ -119,6 +119,16 @@
   anchor: "laura-kinson"
   website: "http://lbkinson.com/"
   website_title: "Laura's Website"
+
+# ## INSTRUCTIONS
+# To add yourself to the directory, copy the relevant template below and fill in
+# your personal details. You'll also need to add your square photo to
+# source/images/women. The name of your photo should be the value of your
+# 'anchor' field from your entry, in jpg form. You can see how this is used on
+# line 22 of the-women.html.erb. A complete PR includes your entry added to
+# the_women.yml and your photo added, named correctly, in the appropriate place.
+# Photos should be 400x400 minimum size, and be just headshots (no pets,
+# scenery, etc). Stage using `middleman` command to make sure it looks good!
 
 # ## BLANK TEMPLATE TO COPY
 #
