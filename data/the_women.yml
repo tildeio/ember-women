@@ -120,6 +120,15 @@
   website: "http://lbkinson.com/"
   website_title: "Laura's Website"
 
+- name: "Melissa Roman"
+  job_title: "Software Engineer at Ticketfly"
+  location: "San Francisco"
+  bio: "Melissa is a front-end engineer at Ticketfly, currently working on product development in Ember.js. She is new-ish to Ember and is passionate about learning (which helps with the whole being-new-to-programming-thing), running, and puppies."
+  github: "melissaroman"
+  twitter: "melissaroman26"
+  mentor: false
+  anchor: "melissa-roman"
+
 # ## INSTRUCTIONS
 # To add yourself to the directory, copy the relevant template below and fill in
 # your personal details. You'll also need to add your square photo to
