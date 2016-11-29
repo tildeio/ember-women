@@ -129,6 +129,18 @@
   mentor: false
   anchor: "melissa-roman"
 
+- name: "Serena Fritsch"
+  job_title: "Product Engineer at Intercom"
+  location: "Dublin, Ireland"
+  bio: "Serena is a product engineer working for Intercom in Dublin, Ireland. She started working with Ember 1.5 years ago and never looked back. In her spare time she loves to meet like minded, enthusiastic people by hosting the EmberJS Dublin meetup. She also can be found mentoring at female-friendly workshops, drinking way too much coffee and finding the next great recipe for a chocolate tart."
+  github: "serenaf"
+  twitter: "serifritsch"
+  mentor: false
+  anchor: "serena-fritsch"
+  youtube1: "l4KCEoa29GE"
+  youtube1_title: "Crafting the Perfect Computed Property"
+
+
 # ## INSTRUCTIONS
 # To add yourself to the directory, copy the relevant template below and fill in
 # your personal details. You'll also need to add your square photo to
