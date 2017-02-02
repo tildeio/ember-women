@@ -2,6 +2,10 @@ no event:
 - name: "Tilde"
   image: tilde-logo.png
   website: "http://www.tilde.io"
+WHW Program at EmberConf 2017:
+- name: "Netflix"
+  image: netflix.png
+  website: "http://www.netflix.com"
 WHW Program at EmberConf 2016:
 - name: "Dockyard"
   image: dockyard-logo.png
@@ -9,10 +13,6 @@ WHW Program at EmberConf 2016:
 - name: "Fastly"
   image: fastly-logo.png
   website: "http://www.fastly.com"
-# EmberConf 20168:
-# - name: "Dockyard"
-#   image: dockyard-logo.png
-#   website: "http://www.stickermule.com/unlock?ref_id=3368978601"
 # - name: "Fastly"
 #   image: fastly-logo.png
 #   website: "http://echobind.com/emberconf/"
