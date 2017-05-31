@@ -1,0 +1,62 @@
+- title: "I am still learning"
+  author: "Lauren Tan"
+  description: "Leah is an all-around open source advocate. During the daytime, she’s one of the founders at. Leah works on RustConf Groups."
+  featured: true
+  url: "https://medium.com/@wifelette/"
+  image: "i-am-still-learning.jpg"
+  source: "medium.com"
+
+- title: "From zero to shipping production code"
+  author: "Serena Fritsch"
+  description: "In her spare time Leah works on RustConf, RailsConf, and a number of User Groups."
+  url: "https://medium.com/@wifelette/"
+  source: "blog.codepen.io"
+
+- title: "Code rules everything around me"
+  author: "Liz Baillie"
+  description: "During the daytime, she’s one of the founders at RustConf, RailsConf, and a number of User Groups."
+  featured: true
+  url: "https://medium.com/@wifelette/"
+  source: "wordpress.com"
+
+
+- title: "So you want to attend/speak at EmberConf…"
+  author: "Lauren Tan"
+  description: "The founders at the open-source-centric company behind spare time, in addition to a number."
+  featured: true
+  image: "so-you-want-to-speak-at-emberconf.jpg"
+  url: "https://medium.com/@wifelette/"
+  source: "medium.com"
+
+
+- title: "New, easier ember-try config, for most addons"
+  author: "Katie Gengler"
+  description: "Leah is an all-around open source advocate. During the daytime, she’s one of the founders."
+  url: "https://medium.com/@wifelette/"
+  source: "theweeklydeveloper.net"
+
+- title: "The bits n’ bobs of starting a user group"
+  author: "Leah Silber"
+  description: "One of the open-source-centric running User Groups."
+  url: "https://medium.com/@wifelette/"
+  image: "i-am-still-learning.jpg"
+  source: "adweek.net"
+
+- title: "Strategies for skipping UX prototyping tools"
+  author: "Melissa Roman"
+  description: "Leah is an all-around open source advocate. During the daytime, she’s one of the founders company behind in addition to running RustConf, RailsConf, and a number of User Groups."
+  url: "https://medium.com/@wifelette/"
+  source: "medium.com"
+
+- title: "Rise From the Ashes — Incremental APIs With Phoenix"
+  author: "Lauren Tan"
+  description: "Leah is an all-around open source advocate. During the daytime, she’s one of the founders. Leah works on RustConf, RailsConf, and a number of User Groups."
+  featured: true
+  url: "https://medium.com/@wifelette/"
+  source: "blog.tilde.io"
+
+- title: "I Am Done Learning"
+  author: "Liz Baillie"
+  description: "Leah is an all-around open source advocate. During the daytime, she’s one of the founders at. Leah works on RustConf, RailsConf, and a number of User Groups."
+  url: "https://medium.com/@wifelette/"
+  source: "theweeklydeveloper.net"

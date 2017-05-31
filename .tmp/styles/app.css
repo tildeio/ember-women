@@ -2841,7 +2841,7 @@ a {
         padding-bottom: 3em; }
         .the-women .women-list ul li.woman div.basic-info h3 {
           line-height: 1.2em;
-          color: #120C07; }
+          color: #211A14; }
         .the-women .women-list ul li.woman div.basic-info p.job-title {
           color: #817B74;
           margin: .4em 0 0;
@@ -2992,7 +2992,7 @@ a {
               .the-women .women-list ul li.woman .expand div div a.video-thumb figure {
                 width: 100%; } }
             .the-women .women-list ul li.woman .expand div div a.video-thumb figure div {
-              background: #120C07;
+              background: #211A14;
               width: 100%;
               position: relative;
               display: inline-block; }
@@ -3227,6 +3227,103 @@ a {
           .the-women .women-list ul li.woman.active .expand div div {
             padding: 0; }
 
+/* The Women
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+section.the-blogs section.the-posts div.row div.columns ul.featured-blogs {
+  list-style: none; }
+  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.grid-sizer {
+    width: 49%; }
+  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.gutter-sizer {
+    width: 2%; }
+  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.grid-item {
+    width: 49%;
+    margin-bottom: 1.2em; }
+  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper {
+    background-color: white;
+    padding: 20px; }
+    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.blog-image {
+      width: 100%;
+      height: 300px;
+      float: left;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      margin-top: 1.5em;
+      margin-bottom: 1em;
+      background-size: cover;
+      background-position: center; }
+      section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.blog-image:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #EC8820;
+        display: block;
+        position: relative;
+        opacity: 0.2; }
+    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a h3 {
+      font-size: 1.625em;
+      line-height: 1.2em;
+      color: #211A14; }
+    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a p.blog-description {
+      font-size: 1.125em;
+      margin-top: .65em;
+      line-height: 1.6em;
+      margin-bottom: 1em; }
+    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a small.blog-source {
+      color: #817B74;
+      text-transform: uppercase;
+      letter-spacing: .025em;
+      margin-bottom: 1em;
+      opacity: 0.65; }
+      section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a small.blog-source:after {
+        content: '';
+        display: inline-block; }
+    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.byline {
+      margin-bottom: 1em; }
+      section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.byline:after {
+        content: '';
+        display: block;
+        clear: both; }
+      section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.byline div.author-image {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-top: -5px;
+        overflow: hidden;
+        float: left;
+        border-radius: 999em;
+        margin-right: 15px; }
+        section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.byline div.author-image img {
+          width: 100%;
+          opacity: 1; }
+      section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.byline p.blog-author {
+        line-height: 1em;
+        margin: 5px;
+        color: #B5808F; }
+  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog:hover div.wrapper {
+    -webkit-transform: translateY(-0.3em);
+    transform: translateY(-0.3em);
+    transition: all 150ms cubic-bezier(0.77, 0, 0.175, 1); }
+    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog:hover div.wrapper a p.blog-author {
+      color: #817B74; }
+    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog:hover div.wrapper a div.blog-image img {
+      opacity: 100;
+      transition: opacity 150ms; }
+    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog:hover div.wrapper a div.blog-image:after {
+      opacity: 0.05; }
+    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog:hover div.wrapper a h3 {
+      color: #00ADC4; }
+    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog:hover div.wrapper a small.blog-source {
+      opacity: 1; }
+  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.featured .wrapper a h3 {
+    font-size: 2.5em;
+    line-height: 1.1em;
+    color: #211A14; }
+  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.featured .wrapper a p.blog-description {
+    font-size: 1.3125em;
+    margin-top: .35em;
+    margin-bottom: .5em; }
+
 /* Become a Sponsor
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .become-a-sponsor .page-intro .button {
@@ -3323,7 +3420,7 @@ a {
       display: none; }
     #public #header div {
       font-weight: bold;
-      color: #120C07;
+      color: #211A14;
       font-size: 3.375em;
       text-align: center;
       margin-top: 1em;
@@ -3340,7 +3437,7 @@ a {
     float: left;
     position: relative;
     text-align: center;
-    color: #120C07;
+    color: #211A14;
     font-weight: bold;
     font-size: 0.8125em;
     letter-spacing: -0.03em;
@@ -3389,7 +3486,7 @@ a {
         border-radius: 0.25em;
         z-index: -999; }
   #public .desc {
-    color: #120C07;
+    color: #211A14;
     letter-spacing: -.03em;
     margin-bottom: .25em;
     font-size: 0.9375em; }
@@ -3835,6 +3932,9 @@ img.mfp-img {
 .purple {
   background: purple; }
 
+.white {
+  background: white; }
+
 /* Foundation Overrides, Misc Global Elements
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
@@ -3955,23 +4055,23 @@ code {
               background-color: #0FBAD0; }
         .page-header .main-menu ul.menu li.active > a, .page-footer .main-menu ul.menu li.active > a {
           background: none;
-          color: #120C07;
+          color: #211A14;
           font-weight: bold;
           letter-spacing: -.05em; }
 
 .page-header a {
   color: #817B74; }
   .page-header a:hover {
-    color: #120C07; }
+    color: #211A14; }
 
 .the-program #the-program,
 .the-women #the-women {
   font-weight: bold;
-  color: #120C07;
+  color: #211A14;
   letter-spacing: -.03em; }
 
 .page-footer {
-  background: #120C07; }
+  background: #211A14; }
   .page-footer a {
     color: #817B74; }
     .page-footer a:hover {
@@ -4033,7 +4133,7 @@ code {
       font-size: 0.9375em;
       color: #817B74; }
       .xsponsors-footer div p span {
-        color: #120C07;
+        color: #211A14;
         font-weight: bold; }
 
 /* Email CTA

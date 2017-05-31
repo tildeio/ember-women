@@ -4,3 +4,5 @@
 //= require "magnificent-popup.js"
 //= require "app.js"
 //= require "retina.js"
+//= require "masonry.pkgd.min.js"
+//= require "imagesloaded.pkgd.min.js"
