@@ -21,6 +21,7 @@
           a {
             div.woman-thumb {
               @include transition(all 150ms ease-in-out);
+              @include transform-origin(bottom center);
               display: block;
               position: relative;
               height: 145px;

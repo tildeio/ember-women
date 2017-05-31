@@ -2787,6 +2787,9 @@ a {
       padding: 0 1%; }
       .the-women .women-list ul li.woman a div.woman-thumb {
         transition: all 150ms ease-in-out;
+        -webkit-transform-origin: bottom center;
+        -khtml-transform-origin: bottom center;
+        transform-origin: bottom center;
         display: block;
         position: relative;
         height: 145px;
