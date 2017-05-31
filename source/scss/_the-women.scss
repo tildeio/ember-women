@@ -19,19 +19,20 @@
         padding: 0 1%;
         &.woman {
           a {
-
             div.woman-thumb {
-              @include transition(all 150ms);
+              @include transition(all 150ms ease-in-out);
+              @include transform-origin(bottom center);
               display: block;
               position: relative;
-              padding-bottom: 65%;
+              height: 145px;
+              width: 100%;
               overflow: hidden;
-              background: orange;
+              background: $orange;
               background-clip: content-box;
               img {
                 width: 100%;
                 display: block;
-                position: absolute;
+                position: relative;
                 top: 50%;
                 left: 50%;
 
@@ -39,7 +40,14 @@
                 opacity: .8;
            }
               &:hover {
+                @include transform(scale(1.05));
+                @include transform-origin(bottom center);
+                @include transition(scale 50ms ease-in-out);
+                @media screen and (min-width: $large){
+                  @include transform(scale(1.075));
+                }
                 img {
+                  opacity: .95
                 }
               }
               p.mentor-badge {
@@ -224,7 +232,7 @@
             }
             & * {
               opacity: 0;
-              @include transition(opacity 150ms);
+              @include transition(opacity 150ms ease-in-out);
             }
             &:after {
               content: '';
@@ -455,25 +463,25 @@
 
               & * {
 
-                @include transition(opacity 150ms);
+                @include transition(opacity 150ms ease-in-out);
                 opacity: .8;
                 @media screen and (min-width: $small-medium){
-                  opacity: .5;
+                  opacity: .8;
                 }
               }
               div.woman-thumb {
 
 
 
-                @include transition(opacity 150ms);
-
+                @include transition(scale 50ms ease-in-out);
+                @include transform-origin(bottom center);
                 img {
 
                 }
               }
               div.basic-info {
-                opacity: .6;
-                @include transition(opacity 150ms);
+                opacity: .75;
+                @include transition(opacity 150ms ease-in-out);
 
                 @media screen and (min-width: $small-medium){
                   opacity: .3;
@@ -504,7 +512,8 @@
 
 
 
-                @include transition(opacity 150ms);
+                @include transition(scale 50ms ease-in-out);
+                @include transform-origin(bottom center);
                 img {
                 }
               }
@@ -522,7 +531,7 @@
 
               @include transform(scale(1.15));
               @include transform-origin(bottom center);
-              @include transition(opacity 150ms);
+              @include transition(scale 50ms ease-in-out);
 
               z-index: 100;
               @media screen and (min-width: $large){
@@ -539,6 +548,15 @@
 
 
                 opacity: .08;
+              }
+              &:hover {
+                @include transform(scale(1.15));
+                @include transform-origin(bottom center);
+                @include transition(opacity 150ms ease-in-out);
+                z-index: 100;
+                @media screen and (min-width: $large){
+                  @include transform(scale(1.25));
+                }
               }
             }
             &:nth-last-child(-n+2) {
@@ -564,7 +582,7 @@
               overflow: visible;
               & * {
                 opacity: 1;
-                @include transition(opacity 150ms);
+                @include transition(opacity 150ms ease-in-out);
               }
               @media screen and (min-width: $medium) {
                 margin-top: 0;

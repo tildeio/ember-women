@@ -2786,22 +2786,39 @@ a {
       vertical-align: top;
       padding: 0 1%; }
       .the-women .women-list ul li.woman a div.woman-thumb {
-        transition: all 150ms;
+        transition: all 150ms ease-in-out;
+        -webkit-transform-origin: bottom center;
+        -khtml-transform-origin: bottom center;
+        transform-origin: bottom center;
         display: block;
         position: relative;
-        padding-bottom: 65%;
+        height: 145px;
+        width: 100%;
         overflow: hidden;
-        background: orange;
+        background: #EC8820;
         background-clip: content-box; }
         .the-women .women-list ul li.woman a div.woman-thumb img {
           width: 100%;
           display: block;
-          position: absolute;
+          position: relative;
           top: 50%;
           left: 50%;
           -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
           opacity: .8; }
+        .the-women .women-list ul li.woman a div.woman-thumb:hover {
+          -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+          -webkit-transform-origin: bottom center;
+          -khtml-transform-origin: bottom center;
+          transform-origin: bottom center;
+          transition: scale 50ms ease-in-out; }
+          @media screen and (min-width: 64.0625em) {
+            .the-women .women-list ul li.woman a div.woman-thumb:hover {
+              -webkit-transform: scale(1.075);
+              transform: scale(1.075); } }
+          .the-women .women-list ul li.woman a div.woman-thumb:hover img {
+            opacity: .95; }
         .the-women .women-list ul li.woman a div.woman-thumb p.mentor-badge {
           position: absolute;
           top: 0;
@@ -2925,7 +2942,7 @@ a {
             width: 426.0528409%; } }
         .the-women .women-list ul li.woman .expand * {
           opacity: 0;
-          transition: opacity 150ms; }
+          transition: opacity 150ms ease-in-out; }
         .the-women .women-list ul li.woman .expand:after {
           content: '';
           display: block;
@@ -3116,16 +3133,19 @@ a {
                     width: 70%;
                     font-size: 0.8125em; } }
       .the-women .women-list ul li.woman.inactive a * {
-        transition: opacity 150ms;
+        transition: opacity 150ms ease-in-out;
         opacity: .8; }
         @media screen and (min-width: 31.5em) {
           .the-women .women-list ul li.woman.inactive a * {
-            opacity: .5; } }
+            opacity: .8; } }
       .the-women .women-list ul li.woman.inactive a div.woman-thumb {
-        transition: opacity 150ms; }
+        transition: scale 50ms ease-in-out;
+        -webkit-transform-origin: bottom center;
+        -khtml-transform-origin: bottom center;
+        transform-origin: bottom center; }
       .the-women .women-list ul li.woman.inactive a div.basic-info {
-        opacity: .6;
-        transition: opacity 150ms; }
+        opacity: .75;
+        transition: opacity 150ms ease-in-out; }
         @media screen and (min-width: 31.5em) {
           .the-women .women-list ul li.woman.inactive a div.basic-info {
             opacity: .3; } }
@@ -3136,7 +3156,10 @@ a {
       .the-women .women-list ul li.woman.semi-active a * {
         opacity: .8; }
       .the-women .women-list ul li.woman.semi-active a div.woman-thumb {
-        transition: opacity 150ms; }
+        transition: scale 50ms ease-in-out;
+        -webkit-transform-origin: bottom center;
+        -khtml-transform-origin: bottom center;
+        transform-origin: bottom center; }
       .the-women .women-list ul li.woman.semi-active a div.basic-info {
         opacity: .5; }
       .the-women .women-list ul li.woman.active div.woman-thumb {
@@ -3145,7 +3168,7 @@ a {
         -webkit-transform-origin: bottom center;
         -khtml-transform-origin: bottom center;
         transform-origin: bottom center;
-        transition: opacity 150ms;
+        transition: scale 50ms ease-in-out;
         z-index: 100; }
         @media screen and (min-width: 64.0625em) {
           .the-women .women-list ul li.woman.active div.woman-thumb {
@@ -3156,6 +3179,18 @@ a {
           width: 100%; }
         .the-women .women-list ul li.woman.active div.woman-thumb:after {
           opacity: .08; }
+        .the-women .women-list ul li.woman.active div.woman-thumb:hover {
+          -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+          -webkit-transform-origin: bottom center;
+          -khtml-transform-origin: bottom center;
+          transform-origin: bottom center;
+          transition: opacity 150ms ease-in-out;
+          z-index: 100; }
+          @media screen and (min-width: 64.0625em) {
+            .the-women .women-list ul li.woman.active div.woman-thumb:hover {
+              -webkit-transform: scale(1.25);
+              transform: scale(1.25); } }
       @media screen and (min-width: 23.75em) {
         .the-women .women-list ul li.woman.active:nth-last-child(-n+2) .expand {
           margin-bottom: 0; } }
@@ -3171,7 +3206,7 @@ a {
         overflow: visible; }
         .the-women .women-list ul li.woman.active .expand * {
           opacity: 1;
-          transition: opacity 150ms; }
+          transition: opacity 150ms ease-in-out; }
         @media screen and (min-width: 40.0625em) {
           .the-women .women-list ul li.woman.active .expand {
             margin-top: 0; } }
