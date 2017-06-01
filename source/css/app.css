@@ -3229,19 +3229,23 @@ a {
 
 /* The Women
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-section.the-blogs section.the-posts div.row div.columns ul.featured-blogs {
+section.the-blogs section.the-posts div.row div.columns ul.blogs {
   list-style: none; }
-  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.grid-sizer {
-    width: 49%; }
-  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.gutter-sizer {
+  @media screen and (min-width: 40.0625em) {
+    section.the-blogs section.the-posts div.row div.columns ul.blogs li.grid-sizer {
+      width: 49%; } }
+  section.the-blogs section.the-posts div.row div.columns ul.blogs li.gutter-sizer {
     width: 2%; }
-  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.grid-item {
-    width: 49%;
-    margin-bottom: 1.2em; }
-  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper {
+  section.the-blogs section.the-posts div.row div.columns ul.blogs li.grid-item {
+    margin-bottom: 1.2em;
+    width: 100%; }
+    @media screen and (min-width: 40.0625em) {
+      section.the-blogs section.the-posts div.row div.columns ul.blogs li.grid-item {
+        width: 49%; } }
+  section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper {
     background-color: white;
     padding: 20px; }
-    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.blog-image {
+    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.blog-image {
       width: 100%;
       height: 300px;
       float: left;
@@ -3252,7 +3256,7 @@ section.the-blogs section.the-posts div.row div.columns ul.featured-blogs {
       margin-bottom: 1em;
       background-size: cover;
       background-position: center; }
-      section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.blog-image:after {
+      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.blog-image:after {
         content: '';
         width: 100%;
         height: 100%;
@@ -3260,31 +3264,34 @@ section.the-blogs section.the-posts div.row div.columns ul.featured-blogs {
         display: block;
         position: relative;
         opacity: 0.2; }
-    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a h3 {
-      font-size: 1.625em;
+    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a h3.blog-title {
+      font-size: 1.125em;
       line-height: 1.2em;
       color: #211A14; }
-    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a p.blog-description {
-      font-size: 1.125em;
+    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a p.blog-description {
+      font-size: 0.9375em;
       margin-top: .65em;
       line-height: 1.6em;
       margin-bottom: 1em; }
-    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a small.blog-source {
+      @media screen and (min-width: 40.0625em) {
+        section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a p.blog-description {
+          font-size: 1.125em; } }
+    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a small.blog-source {
       color: #817B74;
       text-transform: uppercase;
       letter-spacing: .025em;
       margin-bottom: 1em;
       opacity: 0.65; }
-      section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a small.blog-source:after {
+      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a small.blog-source:after {
         content: '';
         display: inline-block; }
-    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.byline {
+    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline {
       margin-bottom: 1em; }
-      section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.byline:after {
+      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline:after {
         content: '';
         display: block;
         clear: both; }
-      section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.byline div.author-image {
+      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline div.author-image {
         display: block;
         width: 30px;
         height: 30px;
@@ -3293,36 +3300,139 @@ section.the-blogs section.the-posts div.row div.columns ul.featured-blogs {
         float: left;
         border-radius: 999em;
         margin-right: 15px; }
-        section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.byline div.author-image img {
+        section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline div.author-image img {
+          display: block;
           width: 100%;
           opacity: 1; }
-      section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog .wrapper a div.byline p.blog-author {
+      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline p.blog-author {
         line-height: 1em;
         margin: 5px;
         color: #B5808F; }
-  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog:hover div.wrapper {
+  section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog:hover div.wrapper {
     -webkit-transform: translateY(-0.3em);
     transform: translateY(-0.3em);
     transition: all 150ms cubic-bezier(0.77, 0, 0.175, 1); }
-    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog:hover div.wrapper a p.blog-author {
+    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog:hover div.wrapper a p.blog-author {
       color: #817B74; }
-    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog:hover div.wrapper a div.blog-image img {
+    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog:hover div.wrapper a div.blog-image img {
       opacity: 100;
-      transition: opacity 150ms; }
-    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog:hover div.wrapper a div.blog-image:after {
+      transition: opacity 150ms;
+      display: block; }
+    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog:hover div.wrapper a div.blog-image:after {
       opacity: 0.05; }
-    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog:hover div.wrapper a h3 {
+    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog:hover div.wrapper a h3.blog-title {
       color: #00ADC4; }
-    section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.blog:hover div.wrapper a small.blog-source {
+    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog:hover div.wrapper a small.blog-source {
       opacity: 1; }
-  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.featured .wrapper a h3 {
-    font-size: 2.5em;
-    line-height: 1.1em;
+  section.the-blogs section.the-posts div.row div.columns ul.blogs li.featured .wrapper a h3.blog-title {
+    font-size: 1.625em;
+    line-height: 1.3em;
     color: #211A14; }
-  section.the-blogs section.the-posts div.row div.columns ul.featured-blogs li.featured .wrapper a p.blog-description {
-    font-size: 1.3125em;
+    @media screen and (min-width: 40.0625em) {
+      section.the-blogs section.the-posts div.row div.columns ul.blogs li.featured .wrapper a h3.blog-title {
+        font-size: 2.5em;
+        line-height: 1.1em; } }
+  section.the-blogs section.the-posts div.row div.columns ul.blogs li.featured .wrapper a p.blog-description {
+    font-size: 1.125em;
     margin-top: .35em;
     margin-bottom: .5em; }
+    @media screen and (min-width: 40.0625em) {
+      section.the-blogs section.the-posts div.row div.columns ul.blogs li.featured .wrapper a p.blog-description {
+        font-size: 1.3125em; } }
+
+section.the-blogs section.the-posts div.row div.columns div.see-archive {
+  text-align: center;
+  border-bottom: 1px solid #C8C3C3;
+  padding: 3em 0 5em 0; }
+  section.the-blogs section.the-posts div.row div.columns div.see-archive h2 {
+    margin: 0;
+    padding: 0; }
+  section.the-blogs section.the-posts div.row div.columns div.see-archive p {
+    margin: .75em 0 0;
+    padding: 0; }
+
+/* The Women
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+section.the-archives section.page-intro {
+  text-align: center; }
+
+section.the-archives section.the-posts div.row div.columns ul.blogs {
+  list-style: none;
+  margin-top: 3.3em; }
+  section.the-archives section.the-posts div.row div.columns ul.blogs li.blog {
+    padding: .75em 0 .75em;
+    border-bottom: 1px solid #C8C3C3; }
+    section.the-archives section.the-posts div.row div.columns ul.blogs li.blog div.wrapper {
+      padding: .75em; }
+      section.the-archives section.the-posts div.row div.columns ul.blogs li.blog div.wrapper h3.blog-title {
+        font-size: 1.125em;
+        line-height: 1.2em;
+        color: #211A14; }
+      section.the-archives section.the-posts div.row div.columns ul.blogs li.blog div.wrapper p.blog-description {
+        font-size: 1.125em;
+        margin-top: .25em;
+        line-height: 1.6em;
+        margin-bottom: .25em; }
+      section.the-archives section.the-posts div.row div.columns ul.blogs li.blog div.wrapper small.blog-source {
+        color: #817B74;
+        text-transform: uppercase;
+        letter-spacing: .025em;
+        margin-bottom: 1em;
+        opacity: 0.65; }
+        section.the-archives section.the-posts div.row div.columns ul.blogs li.blog div.wrapper small.blog-source:after {
+          content: '';
+          display: inline-block; }
+      section.the-archives section.the-posts div.row div.columns ul.blogs li.blog div.wrapper div.byline {
+        margin-bottom: .25em; }
+        @media screen and (min-width: 40.0625em) {
+          section.the-archives section.the-posts div.row div.columns ul.blogs li.blog div.wrapper div.byline {
+            text-align: right;
+            margin-bottom: 1em; } }
+        section.the-archives section.the-posts div.row div.columns ul.blogs li.blog div.wrapper div.byline:after {
+          content: '';
+          display: block;
+          clear: both; }
+        section.the-archives section.the-posts div.row div.columns ul.blogs li.blog div.wrapper div.byline div.author-image {
+          display: block;
+          width: 25px;
+          height: 25px;
+          overflow: hidden;
+          border-radius: 999em;
+          margin-right: 15px;
+          float: left; }
+          @media screen and (min-width: 40.0625em) {
+            section.the-archives section.the-posts div.row div.columns ul.blogs li.blog div.wrapper div.byline div.author-image {
+              float: right;
+              margin-left: 25px;
+              width: 40px;
+              height: 40px;
+              margin-right: 0; } }
+          section.the-archives section.the-posts div.row div.columns ul.blogs li.blog div.wrapper div.byline div.author-image img {
+            display: block;
+            width: 100%;
+            opacity: 1; }
+        section.the-archives section.the-posts div.row div.columns ul.blogs li.blog div.wrapper div.byline p.blog-author {
+          line-height: 1em;
+          color: #B5808F;
+          margin-top: .25em; }
+          @media screen and (min-width: 40.0625em) {
+            section.the-archives section.the-posts div.row div.columns ul.blogs li.blog div.wrapper div.byline p.blog-author {
+              margin-top: .5em; } }
+    section.the-archives section.the-posts div.row div.columns ul.blogs li.blog:hover {
+      background: #D9D5D5; }
+      section.the-archives section.the-posts div.row div.columns ul.blogs li.blog:hover div.wrapper p.blog-author {
+        color: #817B74; }
+      section.the-archives section.the-posts div.row div.columns ul.blogs li.blog:hover div.wrapper div.blog-image img {
+        opacity: 100;
+        display: block; }
+      section.the-archives section.the-posts div.row div.columns ul.blogs li.blog:hover div.wrapper div.blog-image:after {
+        opacity: 0.05; }
+      section.the-archives section.the-posts div.row div.columns ul.blogs li.blog:hover div.wrapper a h3.blog-title {
+        color: #0790A2; }
+      section.the-archives section.the-posts div.row div.columns ul.blogs li.blog:hover div.wrapper a small.blog-source {
+        opacity: 1; }
+    section.the-archives section.the-posts div.row div.columns ul.blogs li.blog:last-child {
+      border: none; }
 
 /* Become a Sponsor
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

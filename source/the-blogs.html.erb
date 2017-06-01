@@ -14,13 +14,13 @@ title: The Blogs | Ember Women Helping Women
   <section class="the-posts">
     <div class="row">
       <div class="small-12 columns">
-        <ul class="featured-blogs grid">
+        <ul class="blogs grid">
           <li class="grid-sizer"></li>
           <li class="gutter-sizer"></li>
-          <% data.the_blogs.each do |blog| %>
+          <% data.the_blogs.first(20).each do |blog| %>
           <li class="<% if blog.featured %>featured <% end %>blog grid-item">
             <div class="wrapper">
-              <a href="#">
+              <a href="<%= blog.url %>">
                 <div class="byline">
                   <div class="author-image">
                     <img src="images/women/<%= blog.author.parameterize %>.jpg" />
@@ -40,10 +40,15 @@ title: The Blogs | Ember Women Helping Women
           </li>
           <% end %>
         </ul>
+        <% if data.the_blogs.size > 20 %>
+        <div class="see-archive">
+          <h2>Wait! There's more!</h2>
+          <p><a href="the-archives.html" class="button stroked">See the archives</a></p>
+        </div>
+        <% end %>
       </div>
     </div>
   </section>
-  <%= partial "signup-form" %>
   <%= partial "xsponsors-footer" %>
   <%= partial "footer" %>
 </section>
