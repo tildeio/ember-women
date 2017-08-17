@@ -20,7 +20,7 @@ title: The Blogs | Ember Women Helping Women
           <% data.the_blogs.first(20).each do |blog| %>
           <li class="<% if blog.featured %>featured <% end %>blog grid-item">
             <div class="wrapper">
-              <a href="<%= blog.url %>">
+              <a href="<%= blog.url %>" target="_blank">
                 <div class="byline">
                   <div class="author-image">
                     <img src="images/women/<%= blog.author.parameterize %>.jpg" />
