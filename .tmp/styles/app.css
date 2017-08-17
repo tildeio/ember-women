@@ -4177,7 +4177,8 @@ code {
     color: #211A14; }
 
 .the-program #the-program,
-.the-women #the-women {
+.the-women #the-women,
+.the-blogs #the-blogs {
   font-weight: bold;
   color: #211A14;
   letter-spacing: -.03em; }

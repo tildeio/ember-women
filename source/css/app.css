@@ -3245,69 +3245,71 @@ section.the-blogs section.the-posts div.row div.columns ul.blogs {
   section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper {
     background-color: white;
     padding: 20px; }
-    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.blog-image {
-      width: 100%;
-      height: 300px;
-      float: left;
-      overflow: hidden;
-      display: block;
-      position: relative;
-      margin-top: 1.5em;
-      margin-bottom: 1em;
-      background-size: cover;
-      background-position: center; }
-      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.blog-image:after {
-        content: '';
+    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a {
+      display: block; }
+      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.blog-image {
         width: 100%;
-        height: 100%;
-        background-color: #EC8820;
+        height: 300px;
+        float: left;
+        overflow: hidden;
         display: block;
         position: relative;
-        opacity: 0.2; }
-    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a h3.blog-title {
-      font-size: 1.125em;
-      line-height: 1.2em;
-      color: #211A14; }
-    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a p.blog-description {
-      font-size: 0.9375em;
-      margin-top: .65em;
-      line-height: 1.6em;
-      margin-bottom: 1em; }
-      @media screen and (min-width: 40.0625em) {
-        section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a p.blog-description {
-          font-size: 1.125em; } }
-    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a small.blog-source {
-      color: #817B74;
-      text-transform: uppercase;
-      letter-spacing: .025em;
-      margin-bottom: 1em;
-      opacity: 0.65; }
-      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a small.blog-source:after {
-        content: '';
-        display: inline-block; }
-    section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline {
-      margin-bottom: 1em; }
-      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline:after {
-        content: '';
-        display: block;
-        clear: both; }
-      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline div.author-image {
-        display: block;
-        width: 30px;
-        height: 30px;
-        margin-top: -5px;
-        overflow: hidden;
-        float: left;
-        border-radius: 999em;
-        margin-right: 15px; }
-        section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline div.author-image img {
-          display: block;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        background-size: cover;
+        background-position: center; }
+        section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.blog-image:after {
+          content: '';
           width: 100%;
-          opacity: 1; }
-      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline p.blog-author {
-        line-height: 1em;
-        margin: 5px;
-        color: #B5808F; }
+          height: 100%;
+          background-color: #EC8820;
+          display: block;
+          position: relative;
+          opacity: 0.2; }
+      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a h3.blog-title {
+        font-size: 1.125em;
+        line-height: 1.2em;
+        color: #211A14; }
+      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a p.blog-description {
+        font-size: 0.9375em;
+        margin-top: .65em;
+        line-height: 1.6em;
+        margin-bottom: 1em; }
+        @media screen and (min-width: 40.0625em) {
+          section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a p.blog-description {
+            font-size: 1.125em; } }
+      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a small.blog-source {
+        color: #817B74;
+        text-transform: uppercase;
+        letter-spacing: .025em;
+        margin-bottom: 1em;
+        opacity: 0.65; }
+        section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a small.blog-source:after {
+          content: '';
+          display: inline-block; }
+      section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline {
+        margin-bottom: 1em; }
+        section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline:after {
+          content: '';
+          display: block;
+          clear: both; }
+        section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline div.author-image {
+          display: block;
+          width: 30px;
+          height: 30px;
+          margin-top: -5px;
+          overflow: hidden;
+          float: left;
+          border-radius: 999em;
+          margin-right: 15px; }
+          section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline div.author-image img {
+            display: block;
+            width: 100%;
+            opacity: 1; }
+        section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline p.blog-author {
+          line-height: 1em;
+          margin: 5px;
+          color: #B5808F; }
   section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog:hover div.wrapper {
     -webkit-transform: translateY(-0.3em);
     transform: translateY(-0.3em);
@@ -4175,7 +4177,8 @@ code {
     color: #211A14; }
 
 .the-program #the-program,
-.the-women #the-women {
+.the-women #the-women,
+.the-blogs #the-blogs {
   font-weight: bold;
   color: #211A14;
   letter-spacing: -.03em; }
