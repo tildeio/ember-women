@@ -12,7 +12,6 @@
   url: "https://blog.intercom.com/from-zero-to-shipping-code/"
   source: "blog.codepen.io"
 
-
 - title: "So you want to attend/speak at EmberConf…"
   author: "Jen Weber"
   description: "TL;DR do it. If you need more convincing, read on to learn about what it’s like to be a first-time attendee/speaker, and my advice for you."
@@ -20,7 +19,6 @@
   image: "so-you-want-to-speak-at-emberconf.jpg"
   url: "https://medium.com/ember-ish/so-you-want-to-attend-speak-at-emberconf-231f00122a85"
   source: "medium.com"
-
 
 - title: "New, easier ember-try config, for most addons"
   author: "Katie Gengler"
@@ -38,4 +36,12 @@
   author: "Danielle Adams"
   description: "I’m not an extrovert. I’m not very good at making conversation with people I’ve just met. If I make the decision to speak up in a meeting, I have a 15-30 second debate in my head about my word choice and whether I should say anything at all."
   url: "https://code.likeagirl.io/how-i-unintentionally-became-a-public-speaker-e87352d41437"
+  source: "medium.com"
+
+- title: "A Gentle Introduction To Graph Theory"
+  author: "Vaidehi Joshi"
+  description: "Some of the toughest problems in computer science boil down to graph problems. But why do we use graphs? And what are they? To answer these questions, we’ll need to go deep down to the very roots of something that stems from discrete mathematics: graph theory."
+  featured: true
+  image: "graph-theory.jpg"
+  url: "https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8"
   source: "medium.com"
