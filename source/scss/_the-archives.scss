@@ -1,0 +1,119 @@
+/* The Women
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+section.the-archives {
+  section.page-intro {
+    text-align: center;
+  }
+  section.the-posts {
+    div.row {
+      div.columns {
+        ul.blogs {
+          list-style: none;
+          margin-top: 3.3em;
+          li.blog {
+            padding: .75em 0 .75em;
+            border-bottom: 1px solid $hairline;
+            div.wrapper {
+              padding: .75em;
+              h3.blog-title {
+                font-size: $font-medium;
+                line-height: 1.2em;
+                color: $black;
+              }
+              p.blog-description {
+                font-size: $font-medium;
+                margin-top: .25em;
+                line-height: 1.6em;
+                margin-bottom: .25em;
+              }
+              small.blog-source {
+                color: $gray;
+                text-transform: uppercase;
+                letter-spacing: .025em;
+                margin-bottom: 1em;
+                opacity: 0.65;
+                &:after {
+                  content: '';
+                  display: inline-block;
+                }
+              }
+              div.byline {
+                margin-bottom: .25em;
+                @media screen and (min-width: $medium){
+                  text-align: right;
+                  margin-bottom: 1em;
+                }
+                &:after {
+                  content: '';
+                  display: block;
+                  clear: both;
+                }
+                div.author-image {
+                  display: block;
+                  width: 25px;
+                  height: 25px;
+                  overflow: hidden;
+                  border-radius: 999em;
+                  margin-right: 15px;
+                  float: left;
+                  @media screen and (min-width: $medium){
+                    float: right;
+                    margin-left: 25px;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 0;
+                  }
+                  img {
+                    display: block;
+                    width: 100%;
+                    opacity: 1;
+                  }
+                }
+                p.blog-author {
+                  line-height: 1em;
+                  color: $pink;
+                  margin-top: .25em;
+                  @media screen and (min-width: $medium){
+                    margin-top: .5em;
+                  }
+                }
+              }
+              a {
+                div.post-info {
+                }
+              }
+            }
+            &:hover {
+              background: $drawer-bg;
+              div.wrapper {
+                p.blog-author {
+                  color: $gray;
+                }
+                div.blog-image {
+                  img {
+                    opacity: 100;
+                    display: block;
+                  }
+                  &:after {
+                    opacity: 0.05;
+                  }
+                }
+                a {
+                  h3.blog-title {
+                    color: $dark-blue;
+                  }
+                  small.blog-source {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+            &:last-child {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

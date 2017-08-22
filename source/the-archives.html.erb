@@ -1,0 +1,43 @@
+---
+title: The Archives | Ember Women Helping Women
+---
+<section class="the-archives">
+  <%= partial "header" %>
+  <section class="page-intro">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>The archives.</h1>
+      </div>
+    </div>
+  </section>
+  <section class="the-posts">
+    <div class="row">
+      <div class="small-12 columns">
+        <ul class="blogs">
+          <% data.the_blogs.each do |blog| %>
+          <li class="blog">
+            <div class="wrapper row">
+              <div class="byline small-12 medium-4 large-5 columns">
+                <div class="author-image">
+                  <img src="images/women/<%= blog.author.parameterize %>.jpg" />
+                </div>
+                <p class="blog-author"><%= blog.author %></p>
+
+              </div>
+              <a href="<%= blog.url %>">
+                <div class="post-info small-12 medium-8 large-7 columns">
+                  <h3 class="blog-title"><%= blog.title %></h3>
+                  <!-- <p class="blog-description"><%= blog.description %></p> -->
+                  <small class="blog-source"><%= blog.source %></small>
+                </div>
+              </a>
+            </div>
+          </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <%= partial "xsponsors-footer" %>
+  <%= partial "footer" %>
+</section>
