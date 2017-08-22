@@ -140,6 +140,18 @@
   youtube1: "l4KCEoa29GE"
   youtube1_title: "Crafting the Perfect Computed Property"
 
+- name: "Jen Weber"
+  job_title: "UI/UX Developer at BioBright"
+  location: "Boston, MA"
+  bio: "Jen is a UI/UX Developer at BioBright, a startup that builds tools to advance scientific research. She learned to code in 2016 after changing careers. She is fiercely devoted to encouraging, engaging, and promoting new developers - especially those from non-traditional backgrounds. She is working hard to become a technical contributor to open source projects."
+  github: "jenweber"
+  twitter: "jwwweber"
+  mentor: false
+  anchor: "jen-weber"
+  youtube1: "ZC3lD_DFlkc"
+  youtube1_title: "SVG Animation and Interaction in Ember"
+  website: "https://medium.com/@jenweber/"
+  website_title: "Jen's articles on Medium"
 
 # ## INSTRUCTIONS
 # To add yourself to the directory, copy the relevant template below and fill in

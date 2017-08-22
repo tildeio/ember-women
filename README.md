@@ -1,3 +1,7 @@
+## If Making SCSS Changes
+
+Run `gulp watch`.
+
 ## To Stage
 
 Run `middleman`.

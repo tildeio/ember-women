@@ -21,50 +21,63 @@ title: Become a Sponsor | Ember Women Helping Women
           <div class="row">
 
 
-            <div class="general-xsponsors small-12 medium-6 columns">
-              <div class="row">
+            <div class="general-xsponsors small-12 medium-12 columns">
+              <div class="row collapse">
                 <div class="small-12 large-12 columns">
-
-                  <h2>General Sponsors</h2>
-                  <% data.sponsors.each do |event,sponsors| %>
-                  <% if event == "no event" %>
-                  <ul class="xsponsors">
-                    <% sponsors.each do |sponsor| %>
-                    <li class="xsponsor">
-                      <a href="<%= sponsor.website %>">
-                        <span></span><img src="images/sponsors/<%= sponsor.image %>" alt="<%= sponsor.name %>" data-no-retina>
-                      </a>
-                    </li>
-                    <% end %>
-                  </ul>
-                  <% end %>
-                  <% end %>
-                </div>
-              </div>
-            </div>
-
-            <div class="previous-xsponsors small-12 medium-6 columns">
-              <div class="row">
-                <div class="small-12 columns">
-                  <h2>Event Sponsors</h2>
-                  <ol class="xsponsor-events">
-                    <% data.sponsors.each do |event,sponsors| %>
-                    <% if event != "no event" %>
-                    <li class="xsponsor-event">
-                      <h3><%= event =%></h3>
+                  <div class="row collapse">
+                    <div class="small-12 medium-4 columns">
+                      <h2>General Sponsors</h2>
+                    </div>
+                    <div class="small-12 medium-8 columns">
+                      <% data.sponsors.each do |event,sponsors| %>
+                      <% if event == "no event" %>
                       <ul class="xsponsors">
                         <% sponsors.each do |sponsor| %>
                         <li class="xsponsor">
                           <a href="<%= sponsor.website %>">
-                            <span></span><img src="images/sponsors/<%= sponsor.image %>" alt="<%= sponsor.name %>" data-no-retina>
+                            <span></span><img src="images/sponsors/<%= sponsor.image %>" alt="<%= sponsor.name %>">
                           </a>
                         </li>
                         <% end %>
                       </ul>
-                    </li>
-                    <% end %>
-                    <% end %>
-                  </ol>
+                      <% end %>
+                      <% end %>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="previous-xsponsors small-12 medium-12 columns">
+              <div class="row">
+                <div class="small-12 columns">
+                  <div class="row collapse">
+                    <div class="small-12 medium-4 columns">
+                      <h2>Event Sponsors</h2>
+                    </div>
+                    <div class="small-12 medium-8 columns">
+                      <ol class="xsponsor-events">
+                        <% data.sponsors.each do |event,sponsors| %>
+                        <% if event != "no event" %>
+                        <li class="xsponsor-event">
+                          <h3><%= event =%></h3>
+                          <ul class="xsponsors">
+                            <% sponsors.each do |sponsor| %>
+                            <li class="xsponsor">
+                              <a href="<%= sponsor.website %>">
+                                <span></span><img src="images/sponsors/<%= sponsor.image %>" alt="<%= sponsor.name %>">
+                              </a>
+                            </li>
+                            <% end %>
+                          </ul>
+                        </li>
+                        <% end %>
+                        <% end %>
+                      </ol>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>

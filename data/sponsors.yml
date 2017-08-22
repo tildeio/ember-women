@@ -3,6 +3,9 @@ no event:
   image: tilde-logo.png
   website: "http://www.tilde.io"
 WHW Program at EmberConf 2017:
+- name: "Skylight"
+  image: skylight-logo.png
+  website: "http://www.skylight.io"
 - name: "Netflix"
   image: netflix.png
   website: "http://www.netflix.com"
