@@ -1,3 +1,11 @@
+- title: "Deep Dive on Ember Events"
+  author: "Marie Chatfield"
+  description: "The difference between Ember actions and DOM events and why it matters, plus a really rad flowchart."
+  featured: true
+  image: "ember-events-flowchart.png"
+  url: "https://medium.com/square-corner-blog/deep-dive-on-ember-events-cf684fd3b808"
+  source: "medium.com"
+
 - title: "I am still learning"
   author: "Lauren Tan"
   description: "Public speaking was my greatest fear. It might be yours too. Now, my greatest fear is that I will grow too comfortable."
