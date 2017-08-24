@@ -170,6 +170,21 @@
   website: "https://medium.com/basecs"
   website_title: "Vaidehi's weekly CS series, basecs"
 
+- name: "Marie Chatfield"
+  job_title: "Software Engineer at Square"
+  location: "San Francisco, CA"
+  bio: "Marie  writes code and poetry, sometimes at the same time. Originally from Houston, she now lives and works in San Francisco. She is passionate about creating inclusive spaces, building empathetic and elegant software, and understanding Ember at a deeper level."
+  github: "mchat"
+  twitter: "mariechatfield"
+  mentor: false
+  anchor: "marie-chatfield"
+  youtube1: "cFYsKX83gis"
+  youtube1_title: "[AlterConf] Low Power Mode: Managing Your Emotional and Creative Energy"
+  youtube2: "you6h281qsY"
+  youtube2_title: "[WECode] How to Even Web"
+  website: "http://mariechatfield.com"
+  website_title: "Side projects, tech talks, articles, tutorials, and more!"
+
 # ## INSTRUCTIONS
 # To add yourself to the directory, copy the relevant template below and fill in
 # your personal details. You'll also need to add your square photo to
