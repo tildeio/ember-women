@@ -1,7 +1,11 @@
 <section class="page-header">
   <div class="row">
     <div class="medium-4 columns logo">
+      <% if current_page.data.title == "Ember Women Helping Women" %>
+      <img src="images/whw-logo-dark.png" data-at2x="images/whw-logo-dark@2x.png"/></a>
+      <% else %>
       <a href="index.html"><img src="images/whw-logo.png" data-at2x="images/whw-logo@2x.png"/></a>
+      <% end %>
     </div>
     <div class="medium-8 columns main-menu">
       <ul class="medium-horizontal menu">
