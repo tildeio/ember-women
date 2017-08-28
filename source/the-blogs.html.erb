@@ -5,9 +5,19 @@ title: The Blogs | Ember Women Helping Women
   <%= partial "header" %>
   <section class="page-intro">
     <div class="row">
-      <div class="small-12 columns">
-        <h1>Read our writing.</h1>
-        <p>Here are some articles by women of the Ember community.</p>
+      <div class="small-12 medium-8 large-9 columns">
+        <div class="introduction">
+          <h1>Read our writing.</h1>
+          <p>Here are some articles by women of the Ember community.</p>
+        </div>
+
+
+      </div>
+      <div class="small-12 medium-4 large-3 columns">
+        <div class="callout">
+          <h4>Add your article!</h4>
+          <p><a href="https://github.com/tildeio/ember-women/edit/Blogroll/data/the_blogs.yml" target="_blank">See the instructions</a></p>
+        </div>
       </div>
     </div>
   </section>
@@ -18,6 +28,10 @@ title: The Blogs | Ember Women Helping Women
           <li class="grid-sizer"></li>
           <li class="gutter-sizer"></li>
           <% data.the_blogs.first(20).each do |blog| %>
+          <% data.the_women.each do |woman| %>
+          <% if blog.author == woman.name %>
+
+
           <li class="<% if blog.featured %>featured <% end %>blog grid-item">
             <div class="wrapper">
               <a href="<%= blog.url %>" target="_blank">
@@ -34,10 +48,14 @@ title: The Blogs | Ember Women Helping Women
                 </div>
                 <% end %>
                 <p class="blog-description"><%= blog.description %></p>
-                <small class="blog-source"><%= blog.source %></small>
+                <% url = Domainatrix.parse(blog.url) %>
+                <small class="blog-source"><%= url.domain %>.<%= url.public_suffix %></small>
               </a>
             </div>
           </li>
+          <% else %>
+          <% end %>
+          <% end %>
           <% end %>
         </ul>
         <% if data.the_blogs.size > 20 %>

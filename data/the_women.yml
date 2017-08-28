@@ -1,3 +1,45 @@
+# ## INSTRUCTIONS
+#
+# TL;DR: Edit this file; add your photo; submit a pull request.
+#
+# To add yourself to the directory, copy the relevant template below and fill in
+# your personal details. You'll also need to add your square photo to
+# source/images/women. The name of your photo should be a "paremeterized" version of
+# your name, in jpg form (e.g., if your name is Brenna O'Brien, your photo should be named "brenna-o-brien.jpg").
+# You can see how this is used on the-women.html.erb. A complete PR includes your entry added to
+# the_women.yml and your photo added, named correctly, in the appropriate place.
+# Photos should be 400x400 minimum size, and be just headshots (no pets,
+# scenery, etc). Stage using `middleman` command to make sure it looks good!
+
+# ## BLANK TEMPLATE TO COPY
+#
+# - name: ""
+#   job_title: ""
+#   location: ""
+#   bio: ""
+#   github: ""
+#   twitter: ""
+#   mentor: false
+#   youtube1: ""
+#   youtube1_title: ""
+#   website: ""
+#   website_title: ""
+
+# ## EXAMPLE WITH THREE VIDEOS
+# - name: "Gesleinne Boivin"
+#   job_title: "Co-founder at GreenBase"
+#   location: "Cal, IL"
+#   bio: "Yehuda is a member of the Ember.js, Ruby on Rails and jQuery Core Teams; his 9-to-5 home is at the startup he founded, <a href='http://www.tilde.io'>Tilde Inc</a>, where he works on <a href='http://www.skylight.io'>Skylight</a>, the smart profiler for Rails. Yehuda spends most of his time hacking on open source—his main projects, along with others, like Thor, Handlebars and Janus—and traveling the world doing open source evangelism work."
+#   github: "wifelette"
+#   website: "http://google.com"
+#   website_title: "DS_Store.com"
+#   youtube1: "NGmLLLEHCmI"
+#   youtube1_title: "Building an OSS-Centric Company"
+#   youtube2: "of1zVJqZ-Cc"
+#   youtube2_title: "The Ember Addon Community"
+#   youtube3: "54oW_6kUIGw"
+#   youtube3_title: "Ambitious UX for Ambitious Apps"
+
 - name: "Leah Silber"
   job_title: "Co-Founder at Tilde Inc."
   location: "Portland, OR"
@@ -5,7 +47,6 @@
   github: "wifelette"
   twitter: "wifelette"
   mentor: true
-  anchor: "leah-silber"
   youtube1: "zD26LvYbfms"
   youtube1_title: "Building an OSS-Centric Company"
   website: "https://medium.com/@wifelette/"
@@ -18,7 +59,6 @@
   github: "brittanystoroz"
   twitter: "brittanystoroz"
   mentor: true
-  anchor: "brittany-storoz"
   youtube1: "ohF_exBsQYQ"
   youtube1_title: "Extending DevTools for Custom Debugging"
   youtube2: "J6vPwvFdUiE"
@@ -33,7 +73,6 @@
   github: "beardouglas"
   twitter: "beardigsit"
   mentor: true
-  anchor: "bear-douglas"
   youtube1: "7mNHWu6-lYI"
   youtube1_title: "Demoing Twitter Fabric"
   youtube2: "qq_fSMNWVbE"
@@ -48,7 +87,6 @@
   github: "brenna"
   twitter: "brnnbrn"
   mentor: false
-  anchor: "brenna-obrien"
   website: "http://brennaobrien.com"
   website_title: "Brenna's website"
   youtube1: "yvvst_639oY"
@@ -63,7 +101,6 @@
   github: "kategengler"
   twitter: "katiegengler"
   mentor: true
-  anchor: "katie-gengler"
   youtube1: "_FZw_cokIhc"
   youtube1_title: "The Ember Addon Community"
   youtube2: "1ZdBeDL0s7I"
@@ -78,7 +115,6 @@
   github: "lizbaillie"
   twitter: "_lizbaillie"
   mentor: true
-  anchor: "liz-baillie"
   youtube1: "9Wj01UrGtfs"
   youtube1_title: "Easy-Bake Testing"
   youtube2: "PxtMPbOGdww"
@@ -91,7 +127,6 @@
   github: "poteto"
   twitter: "sugarpirate_"
   mentor: true
-  anchor: "lauren-tan"
   youtube1: "TlU0m18Pr-Y"
   youtube1_title: "Ambitious UX for Ambitious Apps"
   youtube2: "ZpM4cV7rfj0"
@@ -105,7 +140,6 @@
   bio: "Madeline is a UI Engineer at Addepar, where she works on maintaining a consistent visual system across the application using Ember.js and SASS. She also maintains <a href='https://github.com/raemadeline/css-for-engineers'>CSS For Engineers</a>, a blog to teach her more backend-focused peers the joys of writing CSS."
   github: "raemadeline"
   mentor: false
-  anchor: "madeline-rae-horowitz"
   website: "http://raemadeline.com"
   website_title: "Madeline's Website"
 
@@ -116,7 +150,6 @@
   github: "lbkinson"
   twitter: "lbkinson"
   mentor: false
-  anchor: "laura-b-kinson"
   website: "http://lbkinson.com/"
   website_title: "Laura's Website"
 
@@ -127,7 +160,6 @@
   github: "melissaroman"
   twitter: "melissaroman26"
   mentor: false
-  anchor: "melissa-roman"
 
 - name: "Serena Fritsch"
   job_title: "Product Engineer at Intercom"
@@ -136,7 +168,6 @@
   github: "serenaf"
   twitter: "serifritsch"
   mentor: false
-  anchor: "serena-fritsch"
   youtube1: "l4KCEoa29GE"
   youtube1_title: "Crafting the Perfect Computed Property"
 
@@ -147,49 +178,7 @@
   github: "jenweber"
   twitter: "jwwweber"
   mentor: false
-  anchor: "jen-weber"
   youtube1: "ZC3lD_DFlkc"
   youtube1_title: "SVG Animation and Interaction in Ember"
   website: "https://medium.com/@jenweber/"
   website_title: "Jen's articles on Medium"
-
-# ## INSTRUCTIONS
-# To add yourself to the directory, copy the relevant template below and fill in
-# your personal details. You'll also need to add your square photo to
-# source/images/women. The name of your photo should be the value of your
-# 'anchor' field from your entry, in jpg form. You can see how this is used on
-# line 22 of the-women.html.erb. A complete PR includes your entry added to
-# the_women.yml and your photo added, named correctly, in the appropriate place.
-# Photos should be 400x400 minimum size, and be just headshots (no pets,
-# scenery, etc). Stage using `middleman` command to make sure it looks good!
-
-# ## BLANK TEMPLATE TO COPY
-#
-# - name: ""
-#   job_title: ""
-#   location: ""
-#   bio: ""
-#   github: ""
-#   twitter: ""
-#   mentor: false
-#   anchor: ""
-#   youtube1: ""
-#   youtube1_title: ""
-#   website: ""
-#   website_title: ""
-
-# ## EXAMPLE WITH THREE VIDEOS
-# - name: "Gesleinne Boivin"
-#   job_title: "Co-founder at OrangeQC"
-#   location: "Chicago, IL"
-#   bio: "Yehuda is a member of the Ember.js, Ruby on Rails and jQuery Core Teams; his 9-to-5 home is at the startup he founded, <a href='http://www.tilde.io'>Tilde Inc</a>, where he works on <a href='http://www.skylight.io'>Skylight</a>, the smart profiler for Rails. Yehuda spends most of his time hacking on open source—his main projects, along with others, like Thor, Handlebars and Janus—and traveling the world doing open source evangelism work."
-#   github: "wifelette"
-#   anchor: "g"
-#   website: "http://google.com"
-#   website_title: "DS_Store.com"
-#   youtube1: "NGmLLLEHCmI"
-#   youtube1_title: "Building an OSS-Centric Company"
-#   youtube2: "of1zVJqZ-Cc"
-#   youtube2_title: "The Ember Addon Community"
-#   youtube3: "54oW_6kUIGw"
-#   youtube3_title: "Ambitious UX for Ambitious Apps"

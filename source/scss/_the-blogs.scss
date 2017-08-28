@@ -1,6 +1,60 @@
 /* The Women
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 section.the-blogs {
+  section.page-intro {
+    .introduction {
+      border-bottom: 1px solid $hairline;
+      margin-bottom: 1.75em;
+      padding-bottom: 1em;
+      overflow: hidden;
+      @media screen and (min-width: $medium){
+        border-bottom: none;
+        border-right: 1px solid $hairline;
+
+    }
+      p {
+        padding: 0;
+        margin-bottom: 0;
+      }
+    }
+    .callout {
+      padding-left: 0;
+      @media screen and (min-width: $medium){
+        padding: .75em 0 .75em 3em;
+      }
+      h4{
+        font-size: 1em;
+        // text-align: center;
+        margin-bottom: 0;
+        margin-top: 0;
+        &::before {
+            content: '';
+            display: block;
+            width: 5em; // 80px/16px
+            height: 3.5625em; // 57px/16px
+            @include at2x('../images/icon-writing-callout', png, 100%);
+            background-repeat: no-repeat;
+            float: left;
+            margin-right: 2em;
+            margin-top: -.5em;
+            @media screen and (min-width: $medium){
+              float: none;
+            margin: 0 0 1em;
+          }
+        }
+      }
+      p {
+        font-size: $font-xsmall;
+        // text-align: center;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+
+
+
+  }
   section.the-posts {
     div.row {
       div.columns {
