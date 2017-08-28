@@ -16,10 +16,10 @@ title: The Women | Ember Women Helping Women
       <div class="small-12 columns">
         <ul class="small-up-2 medium-up-3 large-up-4">
           <% data.the_women.shuffle.each do |woman| %>
-          <li class="woman column" id="<%= woman.anchor %>">
-            <a href="#<%= woman.anchor %>">
+          <li class="woman column" id="<%= woman.name.parameterize %>">
+            <a href="#<%= woman.name.parameterize %>">
               <div class="woman-thumb">
-                <img src="images/women/<%= woman.anchor %>.jpg" alt="<%= woman.name %>" data-no-retina/>
+                <img src="images/women/<%= woman.name.parameterize %>.jpg" alt="<%= woman.name %>" data-no-retina/>
                 <% if woman.mentor %><p class="mentor-badge">Mentor</p><% end %>
               </div>
               <div class="basic-info">

@@ -1,24 +1,45 @@
+# Add your article to the Ember Women site!
+#
+#
+# Edit this file and submit a pull request.
+#
+#
+# Note:
+# You must be on "The Women" page to share your article.
+# -- Not yet an "Ember Woman"? Add yourself: https://github.com/tildeio/ember-women/edit/Blogroll/data/the_women.yml
+#
+# Attributes:
+# title: "This is the title of my article"
+# author: "This is my name" exactly as it appears in "the_women.yml" This is required for your post to appear.
+# description: "This is a 1-2 sentence summary of my article"
+# url: "This is my full url"
+# image: "This is my article image"
+# -- Optional
+# -- Upload your image to https://github.com/tildeio/ember-women/tree/Blogroll/source/images/blogs
+#
+#
+# The "featured" value is managed by Leah.
+#
+#
+
 - title: "Deep Dive on Ember Events"
   author: "Marie Chatfield"
   description: "The difference between Ember actions and DOM events and why it matters, plus a really rad flowchart."
   featured: true
   image: "ember-events-flowchart.png"
   url: "https://medium.com/square-corner-blog/deep-dive-on-ember-events-cf684fd3b808"
-  source: "medium.com"
-
+  
 - title: "I am still learning"
   author: "Lauren Tan"
   description: "Public speaking was my greatest fear. It might be yours too. Now, my greatest fear is that I will grow too comfortable."
   featured: true
   url: "https://medium.com/@sugarpirate/i-am-still-learning-f61c765d657c"
   image: "i-am-still-learning.jpg"
-  source: "medium.com"
 
 - title: "From zero to shipping production code"
   author: "Serena Fritsch"
   description: "New Intercom engineers ship code on their first day and a feature in their first week. Serena shares her experience of going from zero to shipping."
   url: "https://blog.intercom.com/from-zero-to-shipping-code/"
-  source: "blog.codepen.io"
 
 - title: "So you want to attend/speak at EmberConf…"
   author: "Jen Weber"
@@ -26,25 +47,21 @@
   featured: true
   image: "so-you-want-to-speak-at-emberconf.jpg"
   url: "https://medium.com/ember-ish/so-you-want-to-attend-speak-at-emberconf-231f00122a85"
-  source: "medium.com"
 
 - title: "New, easier ember-try config, for most addons"
   author: "Katie Gengler"
   description: "For those who don't know, ember-try provides the ability to run a command against various sets of dependencies. It is commonly used by Ember addons to run their tests against every version of Ember with which they want to maintain compatibility."
   url: "http://codeallday.com/blog/new-easier-ember-try-config-for-most-addons/"
-  source: "codeallday.com"
 
 - title: "The bits n’ bobs of starting a user group"
   author: "Leah Silber"
   description: "User Groups can be the bread and butter of open source technology communities, especially when they’re fledgling. You’re playing with a new tool, you’re excited and eager; what better way to solidify your interest than to go out and meet other excited users?"
   url: "https://medium.com/@wifelette/the-bits-n-bobs-of-starting-a-user-group-a44cfdd6bed9"
-  source: "medium.com"
 
 - title: "How I Unintentionally Became a Public Speaker"
   author: "Danielle Adams"
   description: "I’m not an extrovert. I’m not very good at making conversation with people I’ve just met. If I make the decision to speak up in a meeting, I have a 15-30 second debate in my head about my word choice and whether I should say anything at all."
   url: "https://code.likeagirl.io/how-i-unintentionally-became-a-public-speaker-e87352d41437"
-  source: "medium.com"
 
 - title: "A Gentle Introduction To Graph Theory"
   author: "Vaidehi Joshi"
@@ -52,4 +69,3 @@
   featured: true
   image: "graph-theory.jpg"
   url: "https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8"
-  source: "medium.com"
