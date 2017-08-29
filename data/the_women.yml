@@ -213,3 +213,14 @@
   website: "http://mariechatfield.com"
   website_title: "Side projects, tech talks, articles, tutorials, and more!"
 
+- name: "Danielle Adams"
+  job_title: "Senior Software Engineer at Blue Apron"
+  location: "New York, NY"
+  bio: "Danielle is a full-stack software engineer working at Blue Apron in New York City on their warehouse software. Her expertise stretches between front-end heavy web applications, mostly with Ember.js, and a variety of back-ends. She has been coding since age 12. In her free time, she enjoys live music, food, hanging out with her cat, and teaching others to code."
+  github: "danielleadams"
+  twitter: "adamzdanielle"
+  mentor: false
+  youtube1: "Kdtdya3GaHE"
+  youtube1_title: "Ruby Racing: Challenging Ruby Methods"
+  youtube2: "3tfMzhxYK2M"
+  youtube2: "Outside the (Web) Box: Using Ruby for Other Protocols"
