@@ -130,6 +130,7 @@ section.the-blogs {
                 }
                 div.byline {
                   margin-bottom: 1em;
+                  position: relative;
                   &:after {
                     content: '';
                     display: block;

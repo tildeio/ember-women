@@ -3333,7 +3333,8 @@ section.the-blogs section.the-posts div.row div.columns ul.blogs {
           content: '';
           display: inline-block; }
       section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline {
-        margin-bottom: 1em; }
+        margin-bottom: 1em;
+        position: relative; }
         section.the-blogs section.the-posts div.row div.columns ul.blogs li.blog .wrapper a div.byline:after {
           content: '';
           display: block;

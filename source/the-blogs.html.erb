@@ -47,11 +47,10 @@ title: The Blogs | Ember Women Helping Women
                 <% end %>
                 <p class="blog-description"><%= blog.description %></p>
                 <% url = Domainatrix.parse(blog.url) %>
-                <small class="blog-source"><%= url.domain %>.<%= url.public_suffix %></small>
+                <small class="blog-source"><% if blog.pub_date present? %><%= blog.pub_date%> &middot; <% else %><% end %><%= url.domain %>.<%= url.public_suffix %> </small>
               </a>
             </div>
           </li>
-          <% else %>
           <% end %>
           <% end %>
           <% end %>
