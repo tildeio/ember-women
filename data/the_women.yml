@@ -174,7 +174,7 @@
 - name: "Jen Weber"
   job_title: "UI/UX Developer at BioBright"
   location: "Boston, MA"
-  bio: "Jen is a UI/UX Developer at BioBright, a startup that builds tools to advance scientific research. She learned to code in 2016 after changing careers. She is fiercely devoted to encouraging, engaging, and promoting new developers - especially those from non-traditional backgrounds. She is working hard to become a technical contributor to open source projects."
+  bio: "Jen is an engineer at BioBright, a startup that builds tools to advance scientific research. She is a member of the Ember.js Learning Team, where she helps new contributors get started and maintains resources like the Guides. As a career changer herself, Jen is fiercely devoted to encouraging, engaging, and promoting new developers - especially those from non-traditional backgrounds."
   github: "jenweber"
   twitter: "jwwweber"
   mentor: false
