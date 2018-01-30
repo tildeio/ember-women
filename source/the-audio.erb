@@ -1,0 +1,161 @@
+---
+title: The Women | Ember Women Helping Women
+---
+<section class="the-women">
+  <%= partial "header" %>
+  <section class="page-intro">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>Get to know us.</h1>
+        <p>In the months leading up to EmberConf, one of the major annual events the WHW program focuses on, we host a series of online Hangouts to get to know each other and provide support.</p>
+      </div>
+    </div>
+  </section>
+  <section class="women-list">
+    <div class="row collapse">
+      <div class="small-12 columns">
+        <ul class="small-up-2 medium-up-3 large-up-3">
+          <% data.the_women.each do |woman| %>
+          <li class="woman column" id="<%= woman.anchor %>">
+            <a href="#<%= woman.anchor %>">
+              <div class="woman-thumb">
+                <img src="images/women/<%= woman.anchor %>.jpg" alt="<%= woman.name %>" data-no-retina/>
+                <% if woman.mentor %><p class="mentor-badge">Mentor</p><% end %>
+              </div>
+              <div class="basic-info">
+                <h3 class="woman-name"><%= woman.name %></h3>
+                <p class="job-title"><%= woman.job_title %></p>
+                <p class="location"><%= woman.location %></p>
+              </div>
+            </a>
+            <section class="expand">
+              <div class="row">
+
+                <div class="small-12 medium-9 large-9 columns">
+
+                  <p class="bio"><%= woman.bio %></p>
+                  <ul class="other-links">
+                    <% if woman.github present? %>
+                    <li>
+                      <a href="//github.com/<%= woman.github %>" class="github" target="_blank"><%= woman.github %></a>
+                    </li>
+                    <% end %>
+                    <% if woman.twitter present? %>
+                    <li>
+                      <a href="//twitter.com/<%= woman.twitter %>" class="twitter" target="_blank"><%= woman.twitter %></a>
+                    </li>
+                    <% end %>
+                    <% if woman.website present? %>
+                    <li>
+                      <a href="<%= woman.website %>" class="external-link" target="_blank"><%= woman.website_title %></a>
+                    </li>
+                  </ul>
+                  <% end %>
+                  <p class="contact-cta"><a href="https://tilde.wufoo.com/forms/ember-women-helping-women-contact-us/def/field1=Find%20a%20speaker&field118=<%= woman.name %>" class="button stroked">Invite <%= woman.name %> to speak</a></p>
+                </div>
+                <div class="small-12 medium-3 large-3 columns">
+                  <% if woman.youtube2 present? %>
+                  <ul>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=<%= woman.youtube1 %>" class="video-thumb">
+                        <figure>
+                          <div>
+                            <img src="http://i.ytimg.com/vi/<%= woman.youtube1 %>/hqdefault.jpg" alt="Watch <%= woman.youtube1_title %>r">
+                          </div>
+                          <figcaption>
+                            <%= woman.youtube1_title %>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=<%= woman.youtube2 %>" class="video-thumb">
+                        <figure>
+                          <div>
+                            <img src="http://i.ytimg.com/vi/<%= woman.youtube2 %>/hqdefault.jpg" alt="Watch <%= woman.youtube2_title %>r">
+                          </div>
+                          <figcaption>
+                            <%= woman.youtube2_title %>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </li>
+                    <% if woman.youtube3 present? %>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=<%= woman.youtube3 %>" class="video-thumb">
+                        <figure>
+                          <div>
+                            <img src="http://i.ytimg.com/vi/<%= woman.youtube3 %>/hqdefault.jpg" alt="Watch <%= woman.youtube3_title %>r">
+                          </div>
+                          <figcaption>
+                            <%= woman.youtube3_title %>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </li>
+                    <% end %>
+                  </ul>
+                  <% else %>
+                  <% if woman.youtube1 present? %>
+                  <a href="https://www.youtube.com/watch?v=<%= woman.youtube1 %>" class="video-thumb">
+                    <figure>
+                      <div>
+                        <img src="http://i.ytimg.com/vi/<%= woman.youtube1 %>/hqdefault.jpg" alt="Watch <%= woman.youtube1_title %>r">
+                      </div>
+                      <figcaption>
+                        <%= woman.youtube1_title %>
+                      </figcaption>
+                    </figure>
+                  </a>
+                  <% end %>
+                  <% end %>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li class="column large-2">
+            hello
+          </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <%= partial "signup-form" %>
+  <%= partial "xsponsors-footer" %>
+  <%= partial "footer" %>
+
+  <script>
+  $(document).ready(function() {
+    $('.video-thumb').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+
+      fixedContentPos: false
+    });
+  });
+  </script>
+  <script> // Add hash to URL on click; Animate Scroll-To Links
+  $(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+      $('html, body').delay(100);
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top - 60
+      }, 260, function () {
+        window.location.hash = target;
+      });
+    });
+  });
+  </script>
+
+
+
+</section>

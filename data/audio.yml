@@ -1,0 +1,27 @@
+- speaker: "Brenna O'Brien"
+  date: 2016-11-02
+  hangout_type: meet-a-member
+  description: "Leah is an all-around open source advocate. During the daytime, she’s one of the founders at <a href='http://www.tilde.io'>Tilde Inc</a>, the open-source-centric company behind <a href='http://www.skylight.io'>Skylight</a>. In her spare time, in addition to running <a href='http://www.emberconf.com'>EmberConf</a>, Leah works on RustConf, RailsConf, and a number of User Groups."
+  anchor: "mam-brenna"
+  audio: "https://s3.amazonaws.com/emberconf/2016-11-02-hangout-brenna.mp4"
+
+- speaker: "Blank"
+  date: 2016-11-09
+  hangout_type: cfp
+  description: "Submitting to a conference can be intimidating! And even if it isn't, you might be having trouble coming up with an idea. Hopefully we can help!<br>On November 9th 2016 we hosted an online video chat where members of the Program Committee and Core Team chatted about the CFP, the content they hoped to see, and answered audience questions about ideas and proposals."
+  anchor: "cfp-2017"
+  audio: "https://s3.amazonaws.com/emberconf/2016-11-09-hangout.mp3"
+
+- speaker: "Blank"
+  date: 2015-11-22
+  hangout_type: cfp
+  description: "Submitting to a conference can be intimidating! And even if it isn't, you might be having trouble coming up with an idea. Hopefully we can help!<br>On November 22th 2015 we hosted an online video chat where members of the Program Committee and Core Team chatted about the CFP, the content they hoped to see, and answered audience questions about ideas and proposals."
+  anchor: "cfp-2016"
+  audio: "https://s3.amazonaws.com/emberconf/2015-11-22-hangout.mp3"
+
+- speaker: "Serena Fritsch"
+  date: 2016-11-30
+  hangout_type: meet-a-member
+  description: ""
+  anchor: "mam-serena"
+  audio: "https://s3.amazonaws.com/emberconf/2016-11-02-hangout-brenna.mp4"
