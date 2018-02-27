@@ -187,10 +187,23 @@ code {
 
 .page-footer {
   background: $black;
+  padding-bottom: .5em;
+
+
   a {
     color: $gray;
     &:hover {
       color: white;
+    }
+  }
+  .note {
+    margin-top: .125em;
+
+    padding: 1em 0;
+    p {
+      font-size: $font-xxsmall;
+      line-height: 1.3em;
+      color: #7d5e57;
     }
   }
 }
