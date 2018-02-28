@@ -226,3 +226,14 @@
   youtube2_title: "Outside the (Web) Box: Using Ruby for Other Protocols"
   website: "https://medium.com/@adamzdanielle"
   website_title: "Danielle on Medium"
+
+- name: "Samanta de Barros"
+  job_title: "Software Engineer at Wyeworks"
+  location: "Berlin, Germany"
+  bio: "Samanta is a full-stack software engineer at <a href='https://wyeworks.com/'>Wyeworks</a> where she gets to work with Rails and Ember.js to help clients grow their business. Besides doing web development she enjoys discovering new cities and finding the best coffee places (to order tea)."
+  github: "sdebarros"
+  twitter: "sami_dbc"
+  mentor: false
+  youtube1: "OR1Tk_bwmZo"
+  youtube1_title: "Going Progressive with Ember"
+
