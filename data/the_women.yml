@@ -237,3 +237,12 @@
   youtube1: "OR1Tk_bwmZo"
   youtube1_title: "Going Progressive with Ember"
 
+- name: "Lisa Backer"
+  job_title: "Software Engineer at DockYard"
+  location: "Arlington, VA"
+  bio: "Lisa is an engineer at <a href='https://dockyard.com/'>DockYard</a> working to help large clients utilize Ember.js at scale and with a commitment to quality. While Lisa has more than 15 years of web development experience, she also finds time for cooking, raising her two boys, volunteering with local organizations, dancing, and Lego."
+  github: "eshtadc"
+  twitter: "eshtadc"
+  mentor: false
+
+
