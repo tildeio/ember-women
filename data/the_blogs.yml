@@ -76,3 +76,10 @@
   image: "graph-theory.jpg"
   url: "https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8"
   pub_date: "Mar 2017"
+
+  title: "Bending Time in Ember Tests"
+  author: "Lisa Backer"
+  description: "Learn how to use lolex timers to manage testing complicated time-based interactions."
+  image: "bending-time.jpg"
+  url: "https://dockyard.com/blog/2018/04/18/bending-time-in-ember-tests"
+  pub_date: "Apr, 2018"
