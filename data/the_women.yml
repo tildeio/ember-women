@@ -245,4 +245,18 @@
   twitter: "eshtadc"
   mentor: false
 
-
+- name: "Jessica Jordan"
+  job_title: "Software Engineer at simplabs"
+  location: "Berlin, Germany"
+  bio: "Jessica is a Berlin-based software engineer working at <a href='https://simplabs.com/'>simplabs</a>. She is also an organizer of the Ember Berlin meetup, an Ember Learning Core team member and an editor at The Ember Times. Jessica spoke at 16 international conferences about JavaScript and Ember and will mentor in both English and German. She also enjoys comics, scouting vegan restaurants and listening to goth music."
+  github: "jessica-jordan"
+  twitter: "jjordan_dev"
+  mentor: true
+  youtube1: "h3YtViXranw"
+  youtube1_title: "Everything They Didn't Tell You About the Ember Community"
+  youtube2: "5eXe5t_KO2Q"
+  youtube2_title: "JavaScript Diversity"
+  youtube3: "cljehgyxOSQ"
+  youtube3_title: "Crafting Web Comics with Ember"
+  website: "https://jessicajordan.de"
+  website_title: "Jessica Jordan's Homepage"
